@@ -1,0 +1,32 @@
+@import url('./libs/variables.css');
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+@supports (width: 100dvw) {
+  body {
+    width: 100dvw;
+    height: 100dvh;
+    background: cornflowerblue;
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: var(--bkg-primary);
+  color: var(--txt-primary);
+  text-align: center;
+}
