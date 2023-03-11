@@ -1,0 +1,76 @@
+@import url('./global.css');
+@import url('./header.css');
+
+main {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.card {
+  padding: 16px;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  scroll-snap-align: start;
+}
+
+.card__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--card-bkg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.card__title {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  transition-delay: 0s;
+}
+
+.card__tags {
+  margin-bottom: 16px;
+  transition-delay: 0.1s;
+}
+
+.card__tag {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 2px 6px;
+  height: 12px;
+  font-size: 9px;
+  border: 1px solid;
+  border-radius: 100px;
+}
+
+.card__description {
+  margin-bottom: 16px;
+  transition-delay: 0.2s;
+}
+
+.card__links {
+  transition-delay: 0.3s;
+}
+
+.card__link {
+  display: block;
+  color: var(--txt-primary);
+  line-height: 1.5;
+}
+
+.fade-in {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+.fade-out {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}

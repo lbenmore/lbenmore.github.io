@@ -1,31 +1,81 @@
-@import url('./libs/variables.css');
-
-* {
-  position: relative;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  font-family: sans-serif;
-}
-
-@supports (width: 100dvw) {
-  body {
-    width: 100dvw;
-    height: 100dvh;
-  }
-}
+@import url('./global.css');
 
 main {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background: var(--bkg-primary);
-  color: var(--txt-primary);
-  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: var(--gutter);
 }
+
+  h1 {
+    margin-bottom: var(--half-gutter);
+    width: 100%;
+    font-size: 14vw;
+    font-weight: var(--font-weight-display);
+    font-style: var(--font-style-display);
+    text-transform: uppercase;
+    
+  }
+  
+    h1 span {
+      display: block;
+    }
+    
+  h2 {
+    margin-bottom: var(--gutter);
+    width: 100%;
+    font-size: 3vw;
+    font-style: italic;
+    text-transform: lowercase;
+  }
+  
+  ul {}
+  
+    li {}
+    
+      a {
+        color: var(--txt-primary);
+        font-size: 7vw;
+        line-height: 2;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: var(--font-weight-display);
+        font-style: var(--font-style-display);
+      }
+      
+      a:hover {
+        color: rgba(var(--txt-primary), 0.5);
+      }
+      
+      a:focus,
+      a:visited {
+        color: var(--txt-primary);
+      }
+
+@media (min-width: 540px) {
+  h1 {
+    font-size: 9vw;
+  }
+  
+  h2 {
+    font-size: 2.5vw;
+  }
+  
+  a {
+    font-size: 4.5vw;
+  }
+}  
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 7vw;
+  }
+  
+  h2 {
+    font-size: 2vw;
+  }
+  
+  a {
+    font-size: 3.5vw;
+  }
+}    

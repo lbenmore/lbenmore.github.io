@@ -166,6 +166,7 @@ export default class Starfield {
       width: '100%',
       height: '100%',
       overflow: 'hidden',
+      pointerEvents: 'none',
       transformStyle: 'preserve-3d',
       perspective: '100vw'
     });

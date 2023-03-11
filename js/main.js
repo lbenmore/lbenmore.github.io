@@ -2,6 +2,7 @@ import { $$, onReady } from './libs/utils.js';
 import Starfield from './starfield.js';
 
 ((win, doc) => {
+  
   const initFns = () => {
     new Starfield({
       target: $$('main'),

@@ -1,0 +1,15 @@
+@import url('./global.css');
+@import url('./header.css');
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+main a {
+  color: var(--txt-primary);
+  font-size: var(--font-size-display-secondary);
+  line-height: 2;
+}

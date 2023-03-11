@@ -1,6 +1,22 @@
 :root {
-    --bkg-primary: #202028;
-    --txt-primary: #e8e8ef;
+  /* spacial */
+  --gutter: 16px;
+  --half-gutter: calc(var(--gutter) / 2);
+  --header-height: 80px;
+  --nav-width: calc(100vw - var(--header-height));
+  
+  /* colors */
+  --bkg-primary: #202028;
+  --txt-primary: #e8e8ef;
+  
+  /* text */
+  --font-size-display: 24px;
+  --font-size-display-secondary: 16px;
+  --font-weight-display: 900;
+  --font-style-display: italic;
+  
+  /* animation */
+  --build-anim-duration: 0.67s;
 }
 
 @media (prefers-color-scheme: light) {
