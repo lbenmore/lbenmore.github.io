@@ -1,10 +1,14 @@
 import { $$, onReady } from './libs/utils.js';
+import Starfield from './starfield.js';
 
 ((win, doc) => {
-  const on = 'addEventListener';
-  
   const initFns = () => {
-    console.log($$('main').textContent);
+    new Starfield({
+      target: $$('main'),
+      starData: {
+        color: 'var(--txt-primary)'
+      }
+    });
   };
   
   onReady(initFns);

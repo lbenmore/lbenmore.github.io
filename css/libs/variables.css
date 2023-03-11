@@ -1,4 +1,11 @@
 :root {
-  --bkg-primary: blueviolet;
-  --txt-primary: springgreen;
+    --bkg-primary: #202028;
+    --txt-primary: #e8e8ef;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bkg-primary: #e8e8ef;
+    --txt-primary: #202028;
+  }
 }
