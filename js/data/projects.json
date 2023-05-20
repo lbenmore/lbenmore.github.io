@@ -16,10 +16,7 @@
     "links": [
       {
         "label": "View Source",
-        "href": "./",
-        "attributes": {
-          "disabled": "true"
-        }
+        "href": "https://github.com/lbenmore/lbenmore.github.io/blob/main/js/libs/utils.js"
       }
     ]
   },
