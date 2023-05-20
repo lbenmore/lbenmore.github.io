@@ -120,8 +120,7 @@ header {
         }
 
 main {
-  /*top: var(--header-height);*/
-  padding-top: var(--header-height);
+  height: calc(100vh - var(--header-height));
 }
 
 @media (min-width: 540px) {
