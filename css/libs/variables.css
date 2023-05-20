@@ -3,11 +3,14 @@
   --gutter: 16px;
   --half-gutter: calc(var(--gutter) / 2);
   --header-height: 80px;
-  --nav-width: calc(100vw - var(--header-height));
   
   /* colors */
   --bkg-primary: #202028;
   --txt-primary: #e8e8ef;
+  --purple: #a6f;
+  --green: #0f8;
+  --blue: #08f;
+  --rose: #f06;
   
   /* text */
   --font-size-display: 24px;

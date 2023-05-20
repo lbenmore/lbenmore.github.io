@@ -1,0 +1,6 @@
+@import url('/css/global.css');
+@import url('/css/header.css');
+
+main {
+  padding-top: var(--gutter);
+}

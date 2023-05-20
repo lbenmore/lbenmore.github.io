@@ -2,11 +2,16 @@
 @import url('./header.css');
 
 main {
+  padding-top: 0;
+  height: calc(100vh - var(--header-height));
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 16px;
   width: 100%;
   height: calc(100vh - var(--header-height));
@@ -26,7 +31,7 @@ main {
 }
 
 .card__title {
-  font-size: 48px;
+  font-size: 32px;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -44,8 +49,25 @@ main {
   padding: 2px 6px;
   height: 12px;
   font-size: 9px;
-  border: 1px solid;
+  border: 1px solid currentcolor;
   border-radius: 100px;
+  background: black;
+}
+
+.card__tag--purple {
+  color: var(--purple);
+}
+
+.card__tag--green {
+  color: var(--green);
+}
+
+.card__tag--rose {
+  color: var(--rose);
+}
+
+.card__tag--blue {
+  color: var(--blue);
 }
 
 .card__description {
@@ -62,6 +84,10 @@ main {
   color: var(--txt-primary);
   line-height: 1.5;
 }
+
+  .card__link[disabled]::after {
+    content: ' (Coming Soon)'
+  }
 
 .fade-in {
   opacity: 0;

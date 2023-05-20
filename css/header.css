@@ -1,4 +1,4 @@
-@import url ('./libs/variables.css');
+@import url('./libs/variables.css');
 
 header {
   display: flex;
@@ -55,7 +55,6 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    width: var(--nav-width);
     height: 100vh;
     background-color: var(--bkg-primary);
     transform: translateX(100%);

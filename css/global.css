@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   font-family: sans-serif;
   font-size: 14px;
+  overflow-x: hidden;
 }
 
 @supports (width: 100dvw) {
@@ -26,4 +27,9 @@ main {
   height: 100%;
   background: var(--bkg-primary);
   color: var(--txt-primary);
+}
+
+[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
 }

@@ -1,370 +1,192 @@
 [
   {
-    "title": "Project Name",
-    "image": "https://picsum.photos/id/0/800/800",
+    "title": "BNMR Library",
+    "image": "/assets/library.jpeg",
     "tags": [
       {
         "label": "Mobile-Friendly",
-        "color": "blue"
-      },
-      {
-        "label": "ES6", 
-        "color": "red"
-      },
-      {
-        "label": "Game", 
         "color": "purple"
       },
       {
-        "label": "Web App",
-        "color": "pink"
+        "label": "ES6", 
+        "color": "green"
       }
     ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros turpis, iaculis et odio sed, semper pretium erat. Praesent laoreet malesuada magna eget dapibus. Morbi ullamcorper tellus at feugiat pretium. Vivamus dignissim dapibus enim sit amet interdum. Quisque vehicula ipsum ut eros malesuada, non mattis augue hendrerit. Sed suscipit pulvinar lectus, quis fermentum ipsum dignissim vel. Nullam placerat fringilla facilisis. Sed pellentesque lectus eget scelerisque elementum. Morbi turpis purus, commodo vel iaculis in, venenatis id turpis.",
+    "description": "Utility functions for basic DOM manipulation and other miscellaneous helpers.",
+    "links": [
+      {
+        "label": "View Source",
+        "href": "./",
+        "attributes": {
+          "disabled": "true"
+        }
+      }
+    ]
+  },
+  {
+    "title": "BNMR Core",
+    "image": "/assets/core.jpeg",
+    "tags": [
+      {
+        "label": "Mobile-Friendly",
+        "color": "purple"
+      },
+      {
+        "label": "ES6", 
+        "color": "green"
+      },
+      {
+        "label": "Web App",
+        "color": "blue"
+      }
+    ],
+    "description": "Lightweight framework for static page routing.",
     "links": [
       {
         "label": "View Demo",
-        "href": "./"
+        "href": "./",
+        "attributes": {
+          "disabled": "true"
+        }
       },
       {
         "label": "View Source",
-        "href": "./"
+        "href": "./",
+        "attributes": {
+          "disabled": "true"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Winter Wonderblocks",
+    "image": "/assets/winter-wonderblocks.jpeg",
+    "tags": [
+      {
+        "label": "Mobile-Friendly",
+        "color": "purple"
       },
       {
-        "label": "View Documentation",
+        "label": "ES6", 
+        "color": "green"
+      },
+      {
+        "label": "Game", 
+        "color": "rose"
+      }
+    ],
+    "description": "Prevent falling blocks of various shapes from reaching the top of the board in this winter-themed game.",
+    "links": [
+      {
+        "label": "View Demo",
+        "href": "/project/#winter-wonderblocks/"
+      },
+      {
+        "label": "View Source",
         "href": "./"
       }
     ]
   },
   {
-    "title": "Project Name",
-    "image": "https://picsum.photos/id/10/800/800",
+    "title": "Scroller",
+    "image": "/assets/scroll.jpeg",
     "tags": [
       {
-        "label": "Mobile-Friendly",
-        "color": "blue"
-      },
-      {
         "label": "ES6", 
-        "color": "red"
-      },
-      {
-        "label": "Game", 
-        "color": "purple"
-      },
-      {
-        "label": "Web App",
-        "color": "pink"
+        "color": "green"
       }
     ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros turpis, iaculis et odio sed, semper pretium erat. Praesent laoreet malesuada magna eget dapibus. Morbi ullamcorper tellus at feugiat pretium. Vivamus dignissim dapibus enim sit amet interdum. Quisque vehicula ipsum ut eros malesuada, non mattis augue hendrerit. Sed suscipit pulvinar lectus, quis fermentum ipsum dignissim vel. Nullam placerat fringilla facilisis. Sed pellentesque lectus eget scelerisque elementum. Morbi turpis purus, commodo vel iaculis in, venenatis id turpis.",
+    "description": "A scroll-based UI system for showing and animating content.",
     "links": [
       {
         "label": "View Demo",
-        "href": "./"
+        "href": "/project/#scroller"
       },
       {
         "label": "View Source",
-        "href": "./"
-      },
-      {
-        "label": "View Documentation",
         "href": "./"
       }
     ]
   },
   {
-    "title": "Project Name",
-    "image": "https://picsum.photos/id/90/800/800",
+    "title": "Alien Attack",
+    "image": "/assets/alien-attack.jpeg",
     "tags": [
       {
         "label": "Mobile-Friendly",
-        "color": "blue"
-      },
-      {
-        "label": "ES6", 
-        "color": "red"
-      },
-      {
-        "label": "Game", 
         "color": "purple"
       },
       {
-        "label": "Web App",
-        "color": "pink"
+        "label": "ES6", 
+        "color": "green"
+      },
+      {
+        "label": "Game", 
+        "color": "rose"
       }
     ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros turpis, iaculis et odio sed, semper pretium erat. Praesent laoreet malesuada magna eget dapibus. Morbi ullamcorper tellus at feugiat pretium. Vivamus dignissim dapibus enim sit amet interdum. Quisque vehicula ipsum ut eros malesuada, non mattis augue hendrerit. Sed suscipit pulvinar lectus, quis fermentum ipsum dignissim vel. Nullam placerat fringilla facilisis. Sed pellentesque lectus eget scelerisque elementum. Morbi turpis purus, commodo vel iaculis in, venenatis id turpis.",
+    "description": "Play as a spaceship that must stop an invading alien force.",
     "links": [
       {
         "label": "View Demo",
-        "href": "./"
+        "href": "/project/#alien-attack"
       },
       {
         "label": "View Source",
-        "href": "./"
-      },
-      {
-        "label": "View Documentation",
         "href": "./"
       }
     ]
   },
   {
-    "title": "Project Name",
-    "image": "https://picsum.photos/id/20/800/800",
+    "title": "Steve",
+    "image": "/assets/steve.jpeg",
     "tags": [
       {
         "label": "Mobile-Friendly",
-        "color": "blue"
-      },
-      {
-        "label": "ES6", 
-        "color": "red"
-      },
-      {
-        "label": "Game", 
         "color": "purple"
       },
       {
-        "label": "Web App",
-        "color": "pink"
+        "label": "ES6", 
+        "color": "green"
+      },
+      {
+        "label": "Game", 
+        "color": "rose"
       }
     ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros turpis, iaculis et odio sed, semper pretium erat. Praesent laoreet malesuada magna eget dapibus. Morbi ullamcorper tellus at feugiat pretium. Vivamus dignissim dapibus enim sit amet interdum. Quisque vehicula ipsum ut eros malesuada, non mattis augue hendrerit. Sed suscipit pulvinar lectus, quis fermentum ipsum dignissim vel. Nullam placerat fringilla facilisis. Sed pellentesque lectus eget scelerisque elementum. Morbi turpis purus, commodo vel iaculis in, venenatis id turpis.",
+    "description": "Help Steve the Dinosaur navigate through the treacherous desert by jumping hurdles.",
     "links": [
       {
         "label": "View Demo",
-        "href": "./"
+        "href": "/project/#steve"
       },
       {
         "label": "View Source",
-        "href": "./"
-      },
-      {
-        "label": "View Documentation",
         "href": "./"
       }
     ]
   },
   {
-    "title": "Project Name",
-    "image": "https://picsum.photos/id/30/800/800",
+    "title": "Whack-a-Mouse",
+    "image": "/assets/whack-a-mouse.jpeg",
     "tags": [
       {
-        "label": "Mobile-Friendly",
-        "color": "blue"
-      },
-      {
         "label": "ES6", 
-        "color": "red"
+        "color": "green"
       },
       {
         "label": "Game", 
-        "color": "purple"
-      },
-      {
-        "label": "Web App",
-        "color": "pink"
+        "color": "rose"
       }
     ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros turpis, iaculis et odio sed, semper pretium erat. Praesent laoreet malesuada magna eget dapibus. Morbi ullamcorper tellus at feugiat pretium. Vivamus dignissim dapibus enim sit amet interdum. Quisque vehicula ipsum ut eros malesuada, non mattis augue hendrerit. Sed suscipit pulvinar lectus, quis fermentum ipsum dignissim vel. Nullam placerat fringilla facilisis. Sed pellentesque lectus eget scelerisque elementum. Morbi turpis purus, commodo vel iaculis in, venenatis id turpis.",
+    "description": "Bop the mice as they appear before they get too angry.",
     "links": [
       {
         "label": "View Demo",
-        "href": "./"
+        "href": "/project/#whack-a-mouse"
       },
       {
         "label": "View Source",
-        "href": "./"
-      },
-      {
-        "label": "View Documentation",
-        "href": "./"
-      }
-    ]
-  },
-  {
-    "title": "Project Name",
-    "image": "https://picsum.photos/id/40/800/800",
-    "tags": [
-      {
-        "label": "Mobile-Friendly",
-        "color": "blue"
-      },
-      {
-        "label": "ES6", 
-        "color": "red"
-      },
-      {
-        "label": "Game", 
-        "color": "purple"
-      },
-      {
-        "label": "Web App",
-        "color": "pink"
-      }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros turpis, iaculis et odio sed, semper pretium erat. Praesent laoreet malesuada magna eget dapibus. Morbi ullamcorper tellus at feugiat pretium. Vivamus dignissim dapibus enim sit amet interdum. Quisque vehicula ipsum ut eros malesuada, non mattis augue hendrerit. Sed suscipit pulvinar lectus, quis fermentum ipsum dignissim vel. Nullam placerat fringilla facilisis. Sed pellentesque lectus eget scelerisque elementum. Morbi turpis purus, commodo vel iaculis in, venenatis id turpis.",
-    "links": [
-      {
-        "label": "View Demo",
-        "href": "./"
-      },
-      {
-        "label": "View Source",
-        "href": "./"
-      },
-      {
-        "label": "View Documentation",
-        "href": "./"
-      }
-    ]
-  },
-  {
-    "title": "Project Name",
-    "image": "https://picsum.photos/id/50/800/800",
-    "tags": [
-      {
-        "label": "Mobile-Friendly",
-        "color": "blue"
-      },
-      {
-        "label": "ES6", 
-        "color": "red"
-      },
-      {
-        "label": "Game", 
-        "color": "purple"
-      },
-      {
-        "label": "Web App",
-        "color": "pink"
-      }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros turpis, iaculis et odio sed, semper pretium erat. Praesent laoreet malesuada magna eget dapibus. Morbi ullamcorper tellus at feugiat pretium. Vivamus dignissim dapibus enim sit amet interdum. Quisque vehicula ipsum ut eros malesuada, non mattis augue hendrerit. Sed suscipit pulvinar lectus, quis fermentum ipsum dignissim vel. Nullam placerat fringilla facilisis. Sed pellentesque lectus eget scelerisque elementum. Morbi turpis purus, commodo vel iaculis in, venenatis id turpis.",
-    "links": [
-      {
-        "label": "View Demo",
-        "href": "./"
-      },
-      {
-        "label": "View Source",
-        "href": "./"
-      },
-      {
-        "label": "View Documentation",
-        "href": "./"
-      }
-    ]
-  },
-  {
-    "title": "Project Name",
-    "image": "https://picsum.photos/id/60/800/800",
-    "tags": [
-      {
-        "label": "Mobile-Friendly",
-        "color": "blue"
-      },
-      {
-        "label": "ES6", 
-        "color": "red"
-      },
-      {
-        "label": "Game", 
-        "color": "purple"
-      },
-      {
-        "label": "Web App",
-        "color": "pink"
-      }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros turpis, iaculis et odio sed, semper pretium erat. Praesent laoreet malesuada magna eget dapibus. Morbi ullamcorper tellus at feugiat pretium. Vivamus dignissim dapibus enim sit amet interdum. Quisque vehicula ipsum ut eros malesuada, non mattis augue hendrerit. Sed suscipit pulvinar lectus, quis fermentum ipsum dignissim vel. Nullam placerat fringilla facilisis. Sed pellentesque lectus eget scelerisque elementum. Morbi turpis purus, commodo vel iaculis in, venenatis id turpis.",
-    "links": [
-      {
-        "label": "View Demo",
-        "href": "./"
-      },
-      {
-        "label": "View Source",
-        "href": "./"
-      },
-      {
-        "label": "View Documentation",
-        "href": "./"
-      }
-    ]
-  },
-  {
-    "title": "Project Name",
-    "image": "https://picsum.photos/id/70/800/800",
-    "tags": [
-      {
-        "label": "Mobile-Friendly",
-        "color": "blue"
-      },
-      {
-        "label": "ES6", 
-        "color": "red"
-      },
-      {
-        "label": "Game", 
-        "color": "purple"
-      },
-      {
-        "label": "Web App",
-        "color": "pink"
-      }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros turpis, iaculis et odio sed, semper pretium erat. Praesent laoreet malesuada magna eget dapibus. Morbi ullamcorper tellus at feugiat pretium. Vivamus dignissim dapibus enim sit amet interdum. Quisque vehicula ipsum ut eros malesuada, non mattis augue hendrerit. Sed suscipit pulvinar lectus, quis fermentum ipsum dignissim vel. Nullam placerat fringilla facilisis. Sed pellentesque lectus eget scelerisque elementum. Morbi turpis purus, commodo vel iaculis in, venenatis id turpis.",
-    "links": [
-      {
-        "label": "View Demo",
-        "href": "./"
-      },
-      {
-        "label": "View Source",
-        "href": "./"
-      },
-      {
-        "label": "View Documentation",
-        "href": "./"
-      }
-    ]
-  },
-  {
-    "title": "Project Name",
-    "image": "https://picsum.photos/id/80/800/800",
-    "tags": [
-      {
-        "label": "Mobile-Friendly",
-        "color": "blue"
-      },
-      {
-        "label": "ES6", 
-        "color": "red"
-      },
-      {
-        "label": "Game", 
-        "color": "purple"
-      },
-      {
-        "label": "Web App",
-        "color": "pink"
-      }
-    ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros turpis, iaculis et odio sed, semper pretium erat. Praesent laoreet malesuada magna eget dapibus. Morbi ullamcorper tellus at feugiat pretium. Vivamus dignissim dapibus enim sit amet interdum. Quisque vehicula ipsum ut eros malesuada, non mattis augue hendrerit. Sed suscipit pulvinar lectus, quis fermentum ipsum dignissim vel. Nullam placerat fringilla facilisis. Sed pellentesque lectus eget scelerisque elementum. Morbi turpis purus, commodo vel iaculis in, venenatis id turpis.",
-    "links": [
-      {
-        "label": "View Demo",
-        "href": "./"
-      },
-      {
-        "label": "View Source",
-        "href": "./"
-      },
-      {
-        "label": "View Documentation",
         "href": "./"
       }
     ]
