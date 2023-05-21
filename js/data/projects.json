@@ -16,7 +16,9 @@
     "links": [
       {
         "label": "View Source",
-        "href": "https://github.com/lbenmore/lbenmore.github.io/blob/main/js/libs/utils.js"
+        "attributes": {
+          "href": "https://github.com/lbenmore/lbenmore.github.io/blob/main/js/libs/utils.js"
+        }
       }
     ]
   },
@@ -48,9 +50,10 @@
       },
       {
         "label": "View Source",
-        "href": "./",
         "attributes": {
-          "disabled": "true"
+          "href": "./",
+          "disabled": "true",
+          "target": "_blank"
         }
       }
     ]
@@ -76,11 +79,16 @@
     "links": [
       {
         "label": "View Demo",
-        "href": "/project/#winter-wonderblocks/"
+        "attributes": {
+          "href": "/project/#winter-wonderblocks/"
+        }
       },
       {
         "label": "View Source",
-        "href": "https://github.com/lbenmore/lbenmore.github.io/tree/main/projects/winter-wonderblocks"
+        "attributes": {
+          "href": "https://github.com/lbenmore/lbenmore.github.io/tree/main/projects/winter-wonderblocks",
+          "target": "_blank"
+        }
       }
     ]
   },
@@ -97,11 +105,16 @@
     "links": [
       {
         "label": "View Demo",
-        "href": "/project/#scroller"
+        "attributes": {
+          "href": "/project/#scroller",
+          "target": "_blank"
+        }
       },
       {
         "label": "View Source",
-        "href": "https://github.com/lbenmore/lbenmore.github.io/tree/main/projects/scroller"
+        "attributes": {
+          "href": "https://github.com/lbenmore/lbenmore.github.io/tree/main/projects/scroller"
+        }
       }
     ]
   },
@@ -126,11 +139,16 @@
     "links": [
       {
         "label": "View Demo",
-        "href": "/project/#alien-attack"
+        "attributes": {
+          "href": "/project/#alien-attack"
+        }
       },
       {
         "label": "View Source",
-        "href": "https://github.com/lbenmore/lbenmore.github.io/tree/main/projects/alien-attack"
+        "attributes": {
+          "href": "https://github.com/lbenmore/lbenmore.github.io/tree/main/projects/alien-attack",
+          "target": "_blank"
+        }
       }
     ]
   },
@@ -155,11 +173,16 @@
     "links": [
       {
         "label": "View Demo",
-        "href": "/project/#steve"
+        "attributes": {
+          "href": "/project/#steve"
+        }
       },
       {
         "label": "View Source",
-        "href": "https://github.com/lbenmore/lbenmore.github.io/tree/main/projects/steve"
+        "attributes": {
+          "href": "https://github.com/lbenmore/lbenmore.github.io/tree/main/projects/steve",
+          "target": "_blank"
+        }
       }
     ]
   },
@@ -180,11 +203,16 @@
     "links": [
       {
         "label": "View Demo",
-        "href": "/project/#whack-a-mouse"
+        "attributes": {
+          "href": "/project/#whack-a-mouse"
+        }
       },
       {
         "label": "View Source",
-        "href": "https://github.com/lbenmore/lbenmore.github.io/tree/main/projects/whack-a-mouse"
+        "attributes": {
+          "href": "https://github.com/lbenmore/lbenmore.github.io/tree/main/projects/whack-a-mouse",
+          "target": "_blank"
+        }
       }
     ]
   }
