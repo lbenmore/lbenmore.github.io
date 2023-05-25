@@ -1,0 +1,13 @@
+@import url('../css/global.css');
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main a {
+  color: var(--txt-primary);
+  font-size: var(--font-size-display-secondary);
+  line-height: 2;
+}
