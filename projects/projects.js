@@ -53,9 +53,8 @@ onReady(async () => {
           <div class="card__links fade-in">
             ${project.links.map(link => `
               <a 
-                class="card__link" 
-                href="${link.href}"
-                ${link.attributes && Object.keys(link.attributes).map(attr => `${attr}=${link.attributes[attr]}`) || ''}
+                class="card__link"
+                ${link.attributes && Object.keys(link.attributes).map(attr => `${attr}=${link.attributes[attr]}`).join(' ') || ''}
               >
                 ${link.label}
               </a>
