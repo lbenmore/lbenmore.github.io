@@ -1,5 +1,4 @@
-@import url('./global.css');
-@import url('./header.css');
+@import url('../css/global.css');
 
 main {
   overflow-y: scroll;

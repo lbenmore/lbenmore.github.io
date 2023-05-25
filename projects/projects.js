@@ -1,19 +1,19 @@
-import { $$, onReady, preload } from './libs/utils.js';
+import { $$, onReady, preload } from '../js/libs/utils.js';
 
 onReady(async () => {
   preload([
-    '/assets/alien-attack.jpeg',
-    '/assets/core.jpeg',
-    '/assets/library.jpeg',
-    '/assets/scroll.jpeg',
-    '/assets/steve.jpeg',
-    '/assets/whack-a-mouse.jpeg',
-    '/assets/winter-wonderblocks.jpeg',
+    '../assets/alien-attack.jpeg',
+    '../assets/core.jpeg',
+    '../assets/library.jpeg',
+    '../assets/scroll.jpeg',
+    '../assets/steve.jpeg',
+    '../assets/whack-a-mouse.jpeg',
+    '../assets/winter-wonderblocks.jpeg',
   ], async () => {
     const container = document.createElement('div');
     const threshold = [ 0.75 ];
     
-    const projects = await fetch('./js/data/projects.json')
+    const projects = await fetch('../js/data/projects.json')
       .then(res => res.json())
       .catch(err => console.error(err.message));
       

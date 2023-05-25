@@ -1,4 +1,4 @@
-import { $$, onReady } from './libs/utils.js';
+import { $$, onReady } from '../js/libs/utils.js';
 
 onReady(async () => {
   const { hash } = location;
@@ -20,7 +20,7 @@ onReady(async () => {
         if (m2) return m2.toUpperCase();
       });
 
-    ifm.src = `/projects/${projectName}`;
+    ifm.src = `../projects/projects/${projectName}`;
 
     title.innerHTML = title.innerHTML.replace('Project', formattedName);
     headerH2.innerHTML = formattedName;
