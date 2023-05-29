@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="theme-color" content="e8e4e0">
     <title>Food Tracker</title>
     <style>
       * { 
@@ -12,8 +13,33 @@
         padding: 0;
       }
 
+      :root {
+        --header-height: 60px;
+        --background-primary: #f4f2f0;
+        --background-secondary: #e8e4e0;
+        --color-primary: #18181f;
+        --color-secondary: #28282f;
+        --gutter: 16px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background-primary: #141210;
+          --background-secondary: #282420;
+          --color-primary: #d8d8df;
+          --color-secondary: #e8e8ef;
+        }
+      }
+
       body {
+        background: var(--background-primary);
+        color: var(--color-primary);
         font-family: sans-serif;
+      }
+
+      h1,
+      h2 {
+        font-weight: 300;
       }
 
       header {
@@ -24,8 +50,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 60px;
-        background: #e0e0e0;
+        height: var(--header-height);
+        background: var(--background-secondary);
       }
 
       main {
@@ -37,8 +63,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 16px 0;
-        border-bottom: 1px solid;
+        padding: var(--gutter) 0;
+        border-bottom: 1px solid var(--color-secondary);
       }
 
       .row__name {
@@ -48,7 +74,7 @@
 
       .row__value {
         display: flex;
-        margin-right: 32px;
+        margin-right: calc(var(--gutter) * 2);
       }
 
       .row__value:last-of-type {
@@ -56,14 +82,14 @@
       }
 
       .row__output {
-        margin-right: 8px;
+        margin-right: calc(var(--gutter) / 2);
         font-size: 1.17em;
-        font-weight: 900;
+        font-weight: 300;
       }
 
       .row__value--current .output__value {
         min-width: 300%;
-        background-image: linear-gradient(to right, #f06, #ff0, #0f8);
+        background-image: linear-gradient(to right, #f06, #aa0, #0b9);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -76,7 +102,79 @@
         background: transparent;
         border: none;
         border-radius: 0;
-        box-shadow: 0px 0px 4px #0003;  
+        box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.5);
+        color: inherit;
+      }
+
+      aside {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: var(--background-secondary);
+        transform: translateX(100%);
+        transition: transform 0.3s;
+      }
+
+      #toggleMenu:checked ~ aside {
+        transform: translateX(0);
+      }
+
+      label[for="toggleMenu"] {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: var(--header-height);
+        height: var(--header-height);
+        padding: var(--gutter);
+        background-color: var(--background-secondary);
+        transform: translateX(-100%);
+      }
+
+      label[for="toggleMenu"] span {
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-primary);
+        transition: transform 0.3s;
+      }
+
+      label[for="toggleMenu"] span::before,
+      label[for="toggleMenu"] span::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        transition: inherit;
+      }
+
+      label[for="toggleMenu"] span::before {
+        transform: translateY(calc(var(--gutter) / 2));
+      }
+
+      label[for="toggleMenu"] span::after {
+        transform: translateY(calc(var(--gutter) / -2));
+      }
+
+      #toggleMenu:checked ~ aside label[for="toggleMenu"] span {
+        transform: rotate(-45deg);
+      }
+
+      #toggleMenu:checked ~ aside label[for="toggleMenu"] span::before,
+      #toggleMenu:checked ~ aside label[for="toggleMenu"] span::after {
+        transform: rotate(90deg);
+      }
+
+      aside ul {
+        list-style: none;
+      }
+
+      .menu__item {
+        padding: var(--gutter) calc(var(--gutter) * 2);
+        cursor: pointer;
       }
     </style>
   </head>
@@ -93,7 +191,15 @@
 
     <aside>
       <label for="toggleMenu"><span></span></label>
-
+      <ul>
+        <li class="menu__item" data-action="current">Clear Today</li>
+        <li class="menu__item" data-action="total">Clear Goals</li>
+        <li class="menu__item" data-action="*">Clear All</li>
+        <!-- <li>
+          Color Scheme:
+          <span><span></span></span>
+        </li> -->
+      </ul>
     </aside>
 
     <script>
@@ -156,6 +262,28 @@
         } else {
           return false;
         }
+      };
+
+      const onMenuItemClick = evt => {
+        const { target } = evt;
+        const { action } = target.dataset;
+        const isResetAll = action === '*';
+
+        Object.keys(data).forEach(type => {
+          if (isResetAll) {
+            data[type].current = 0;
+            data[type].active = 0;
+          } else {
+            data[type][action] = 0;
+          }
+        });
+
+        ls('set', 'foodtracker', data);
+        populateDOM();
+        stylize();
+        attachListeners();
+
+        $('#toggleMenu').checked = null;
       }
 
       const onBtnClick = (evt) => {
@@ -170,12 +298,16 @@
         populateDOM();
         stylize();
         attachListeners();
-      }
+      };
 
       const attachListeners = () => {
         $$('button').forEach(btn => {
           btn.addEventListener('click', onBtnClick);
         });
+
+        $$('.menu__item').forEach(menuItem => {
+          menuItem.addEventListener('click', onMenuItemClick);
+        })
       };
 
       const stylize = () => {
@@ -198,7 +330,6 @@
       };
 
       const getData = () => {
-        // get from local storage
         const lsData = ls('get', 'foodtracker');
         if (lsData && typeof lsData === 'object') {
           for (const type of types) {
