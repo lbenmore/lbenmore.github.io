@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Food Tracker</title>
+    <style>
+      * { 
+        position: relative;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #e0e0e0;
+      }
+
+      main {
+        padding: 16px;
+        width: 100%;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 0;
+        border-bottom: 1px solid;
+      }
+
+      .row__name {
+        text-transform: capitalize;
+        flex-grow: 1;
+      }
+
+      .row__value {
+        display: flex;
+        margin-right: 32px;
+      }
+
+      .row__value:last-of-type {
+        margin-right: 0;
+      }
+
+      .row__output {
+        margin-right: 8px;
+        font-size: 1.17em;
+        font-weight: 900;
+      }
+
+      .row__value--current .output__value {
+        min-width: 300%;
+        background-image: linear-gradient(to right, #f06, #ff0, #0f8);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transition: background-position 0.3s;
+      }
+
+      .row__button {
+        width: 2em;
+        height: 2em;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0px 0px 4px #0003;  
+      }
+    </style>
+  </head>
+  <body>
+    <input id="toggleMenu" type="checkbox" hidden>
+
+    <header>
+      <h1>Food Tracker</h1>
+    </header>
+
+    <main>
+      
+    </main>
+
+    <aside>
+      <label for="toggleMenu"><span></span></label>
+
+    </aside>
+
+    <script>
+      const types= [
+        'grains',
+        'fruitables',
+        'dairy',
+        'protein',
+        'fats',
+        'sweets'
+      ];
+
+      const data = {};
+
+      const $ = x => document.querySelector(x);
+      const $$ = x => [...document.querySelectorAll(x)];
+
+      const template = data => `
+        <div class="row" data-type="${data.name}">
+          <div class="row__name"><h2>${data.name}</h2></div>
+          <div class="row__value row__value--current">
+            <div class="row__output">
+              <div class="output__value output__value">${data.current}</div>
+            </div>
+            <div class="row__adjust row__adjust">
+              <button class="row__button row__button--decrease">-</button>
+              <button class="row__button row__button--increase">+</button>
+            </div>
+          </div>
+          <div class="row__value row__value--total">
+            <div class="row__output">
+              <div class="output__value">${data.total}</div>
+            </div>
+            <div class="row__adjust row__adjust">
+              <button class="row__button row__button--decrease">-</button>
+              <button class="row__button row__button--increase">+</button>
+            </div>
+          </div>
+        </div>
+      `;
+
+      const ls = (action, key, value) => {
+        if ('localStorage' in window) {
+          switch (action) {
+            case 'get':
+              let result = localStorage.getItem(key);
+              try {
+                result = JSON.parse(result);
+              } catch (err) {}
+              return result;
+
+            case 'set':
+              localStorage.setItem(key, JSON.stringify(value));
+              return true;
+
+            case 'clear':
+              localStorage.clear();
+              break;
+          }
+        } else {
+          return false;
+        }
+      }
+
+      const onBtnClick = (evt) => {
+        const { currentTarget: btn } = evt;
+        const direction = btn.className.includes('increase') ? 1 : -1;
+        const isCurrent = !!btn.closest('.row__value--current');
+        const type = btn.closest('.row').dataset.type;
+
+        data[type][isCurrent ? 'current' : 'total'] += 1 * direction;
+
+        ls('set', 'foodtracker', data);
+        populateDOM();
+        stylize();
+        attachListeners();
+      }
+
+      const attachListeners = () => {
+        $$('button').forEach(btn => {
+          btn.addEventListener('click', onBtnClick);
+        });
+      };
+
+      const stylize = () => {
+        $$('.row').forEach(row => {
+          const { type } = row.dataset;
+          const outputValueCurrent = row.querySelector('.row__value--current .output__value');
+
+          Object.assign(outputValueCurrent.style, {
+            backgroundSize: `${(data[type].total + 1) * 100}% 100%`,
+            backgroundPosition: `${(data[type].current) * -100}% 0%`
+          });
+        })
+      };
+
+      const populateDOM = () => {
+        $('main').innerHTML = '';
+        for (const type in data) {
+          $('main').innerHTML += template(data[type]);
+        }
+      };
+
+      const getData = () => {
+        // get from local storage
+        const lsData = ls('get', 'foodtracker');
+        if (lsData && typeof lsData === 'object') {
+          for (const type of types) {
+            data[type] = {
+              name: type,
+              current: lsData[type].current || 0,
+              total: lsData[type].total || 0
+            };
+          }
+          return lsData;
+        } else {
+          for (const type of types) {
+            data[type] = {
+              name: type,
+              current: 0,
+              total: 0
+            };
+          }
+        }
+        return data;
+      };
+
+      const initFns = () => {
+        getData();
+        populateDOM();
+        stylize();
+        attachListeners();
+      };
+
+      initFns();
+    </script>
+  </body>
+</html>
