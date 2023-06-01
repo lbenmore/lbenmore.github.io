@@ -13,28 +13,43 @@
         padding: 0;
       }
 
-      :root {
+      body {
         --header-height: 60px;
         --background-primary: #f4f2f0;
         --background-secondary: #e8e4e0;
         --color-primary: #18181f;
         --color-secondary: #28282f;
+        --color-tertiary: #484848;
         --gutter: 16px;
+        --toggle-height: 24px;
+
+        background: var(--background-primary);
+        color: var(--color-primary);
+        font-family: sans-serif;
+      }
+
+      body.dark-mode {
+        --background-primary: #141210;
+        --background-secondary: #282420;
+        --color-primary: #d8d8df;
+        --color-secondary: #e8e8ef;
       }
 
       @media (prefers-color-scheme: dark) {
-        :root {
+        body {
           --background-primary: #141210;
           --background-secondary: #282420;
           --color-primary: #d8d8df;
           --color-secondary: #e8e8ef;
         }
-      }
 
-      body {
-        background: var(--background-primary);
-        color: var(--color-primary);
-        font-family: sans-serif;
+        body.light-mode {
+          --background-primary: #f4f2f0;
+          --background-secondary: #e8e4e0;
+          --color-primary: #18181f;
+          --color-secondary: #28282f;
+          --color-tertiary: #484848;
+        }
       }
 
       h1,
@@ -176,10 +191,61 @@
         padding: var(--gutter) calc(var(--gutter) * 2);
         cursor: pointer;
       }
+
+      .menu__item--select {
+        display: flex;
+        align-items: center;
+        padding: var(--gutter) calc(var(--gutter) * 2);
+      }
+
+      .menu__item--select::after {
+        content: '\25be';
+        background-color: rgba(128, 128, 128, 0.3);
+        padding: calc(var(--gutter) / 2) var(--gutter);
+      }
+
+      .menu__item--select div,
+      .menu__item--toggle div {
+        margin-right: var(--gutter);
+      }
+
+      .select {
+        flex-grow: 1;
+        appearance: none;
+        width: 100%;
+        padding: calc(var(--gutter) / 2) var(--gutter);
+        background: none;
+        background-color: rgba(128, 128, 128, 0.3);
+        border: none;
+        border-radius: 0;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+      }
+
+      .menu__item--toggle span {
+        display: block;
+        height: var(--toggle-height);
+        width: calc(var(--toggle-height) * 2);
+        background: #888;
+        border-radius: calc(var(--toggle-height) / 2);
+      }
+
+      .menu__item--toggle span span {
+        width: var(--toggle-height);
+        background-color: var(--color-tertiary);
+        transition: transform 0.5s, background-color 0.5s;
+      }
+
+      #toggleDarkMode:checked ~ aside .menu__item--toggle span span {
+        background-color: #0f8;
+        transform: translateX(100%);
+      }
     </style>
   </head>
   <body>
     <input id="toggleMenu" type="checkbox" hidden>
+    <input id="toggleDarkMode" type="checkbox" hidden>
 
     <header>
       <h1>Food Tracker</h1>
@@ -195,10 +261,16 @@
         <li class="menu__item" data-action="current">Clear Today</li>
         <li class="menu__item" data-action="total">Clear Goals</li>
         <li class="menu__item" data-action="*">Clear All</li>
-        <!-- <li>
-          Color Scheme:
-          <span><span></span></span>
-        </li> -->
+        <li class="menu__item menu__item--select" data-action="selectBand">
+          <div>Preset Goals:</div>
+          <select class="select"></select>
+        </li>
+        <li class="menu__item menu__item--toggle" data-action="toggleDarkMode">
+          <div>Dark Mode:</div>
+          <label for="toggleColorScheme">
+            <span><span></span></span>
+          </label>
+        </li>
       </ul>
     </aside>
 
@@ -213,9 +285,24 @@
       ];
 
       const data = {};
+      const bands = {};
+      const darkMode = {
+        enabled: false
+      }
 
       const $ = x => document.querySelector(x);
       const $$ = x => [...document.querySelectorAll(x)];
+
+      const getIsDarkMode = () => {
+        const div = document.createElement('div');
+        const darkModeBackgroundColor = 'rgb(20, 18, 16)';
+        let isDarkMode;
+        div.style.setProperty('background-color', 'var(--background-primary');
+        document.body.appendChild(div);
+        isDarkMode = getComputedStyle(div).backgroundColor === darkModeBackgroundColor;
+        
+        return isDarkMode;
+      };
 
       const template = data => `
         <div class="row" data-type="${data.name}">
@@ -264,26 +351,59 @@
         }
       };
 
-      const onMenuItemClick = evt => {
-        const { target } = evt;
-        const { action } = target.dataset;
-        const isResetAll = action === '*';
-
-        Object.keys(data).forEach(type => {
-          if (isResetAll) {
-            data[type].current = 0;
-            data[type].active = 0;
-          } else {
-            data[type][action] = 0;
-          }
-        });
-
+      const updateDataAndView = (preventClose = false) => {
         ls('set', 'foodtracker', data);
         populateDOM();
         stylize();
         attachListeners();
 
-        $('#toggleMenu').checked = null;
+        if (!preventClose) $('#toggleMenu').checked = null;
+      };
+
+      const onMenuToggleChange = evt => {
+        if (darkMode.enabled) {
+          darkMode.enabled = false;
+          $('meta[name="theme-color"]').setAttribute('content', 'e8e4e0');
+          $('body').classList.remove('dark-mode');
+          $('body').classList.add('light-mode');
+          $('#toggleDarkMode').checked = null;
+        } else {
+          darkMode.enabled = true;
+          $('meta[name="theme-color"]').setAttribute('content', '141210');
+          $('body').classList.remove('light-mode');
+          $('body').classList.add('dark-mode');
+          $('#toggleDarkMode').checked = true;
+        }
+      };
+
+      const onMenuSelectChange = evt => {
+        const { target: { value } } = evt;
+        const band = bands[value];
+
+        for (const type in band) {
+          data[type].total = band[type];
+        }
+
+        updateDataAndView();
+      };
+
+      const onMenuItemClick = evt => {
+        const { currentTarget } = evt;
+        const { action } = currentTarget.dataset;
+        const isResetAll = action === '*';
+        
+        if (['selectBand', 'toggleDarkMode'].includes(action)) return;
+
+        Object.keys(data).forEach(type => {
+          if (isResetAll) {
+            data[type].current = 0;
+            data[type].total = 0;
+          } else {
+            data[type][action] = 0;
+          }
+        });
+
+        updateDataAndView();
       }
 
       const onBtnClick = (evt) => {
@@ -294,10 +414,7 @@
 
         data[type][isCurrent ? 'current' : 'total'] += 1 * direction;
 
-        ls('set', 'foodtracker', data);
-        populateDOM();
-        stylize();
-        attachListeners();
+        updateDataAndView();
       };
 
       const attachListeners = () => {
@@ -307,7 +424,10 @@
 
         $$('.menu__item').forEach(menuItem => {
           menuItem.addEventListener('click', onMenuItemClick);
-        })
+        });
+
+        $('.menu__item--select').addEventListener('change', onMenuSelectChange);
+        $('.menu__item--toggle').addEventListener('click', onMenuToggleChange);
       };
 
       const stylize = () => {
@@ -324,9 +444,32 @@
 
       const populateDOM = () => {
         $('main').innerHTML = '';
+
         for (const type in data) {
           $('main').innerHTML += template(data[type]);
         }
+
+        if (getIsDarkMode() === true) {
+          darkMode.enabled = true;
+          $('meta[name="theme-color"]').setAttribute('content', '141210');
+          $('body').classList.add('dark-mode');
+          $('#toggleDarkMode').checked = true;
+        }
+
+        fetch('./foodtracker-bands.json')
+          .then(res => res.json())
+          .then(json => {
+            $('.select').innerHTML = '';
+
+            for (const band in json) bands[band] = json[band];
+
+            Object.keys(bands).forEach(band => {
+              const option = document.createElement('option');
+              option.value = band;
+              option.innerHTML = band.toUpperCase();
+              $('.select').appendChild(option);
+            });
+          });
       };
 
       const getData = () => {

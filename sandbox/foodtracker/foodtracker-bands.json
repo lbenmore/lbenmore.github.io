@@ -1,0 +1,50 @@
+{
+  "a": {
+    "grains": 14,
+    "fruitables": 12,
+    "dairy": 3,
+    "protein": 3,
+    "fats": 8,
+    "sweets": 3
+  },
+  "b": {
+    "grains": 12,
+    "fruitables": 8,
+    "dairy": 3,
+    "protein": 2,
+    "fats": 7,
+    "sweets": 3
+  },
+  "c": {
+    "grains": 10,
+    "fruitables": 7,
+    "dairy": 3,
+    "protein": 2,
+    "fats": 6,
+    "sweets": 2
+  },
+  "d": {
+    "grains": 8,
+    "fruitables": 6,
+    "dairy": 2,
+    "protein": 2,
+    "fats": 5,
+    "sweets": 2
+  },
+  "e": {
+    "grains": 6,
+    "fruitables": 5,
+    "dairy": 2,
+    "protein": 2,
+    "fats": 4,
+    "sweets": 1
+  },
+  "f": {
+    "grains": 4,
+    "fruitables": 4,
+    "dairy": 2,
+    "protein": 2,
+    "fats": 3,
+    "sweets": 1
+  }
+}
