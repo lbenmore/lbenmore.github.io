@@ -360,20 +360,16 @@
         if (!preventClose) $('#toggleMenu').checked = null;
       };
 
+      const setColorScheme = isDarkMode => {
+        $('meta[name="theme-color"]').setAttribute('content', isDarkMode ? '282420' : 'e8e4e0');
+        $('body').classList[isDarkMode ? 'add' : 'remove']('dark-mode');
+        $('body').classList[isDarkMode ? 'remove' : 'add']('light-mode');
+        $('#toggleDarkMode').checked = isDarkMode ? true : null;
+      };
+
       const onMenuToggleChange = evt => {
-        if (darkMode.enabled) {
-          darkMode.enabled = false;
-          $('meta[name="theme-color"]').setAttribute('content', 'e8e4e0');
-          $('body').classList.remove('dark-mode');
-          $('body').classList.add('light-mode');
-          $('#toggleDarkMode').checked = null;
-        } else {
-          darkMode.enabled = true;
-          $('meta[name="theme-color"]').setAttribute('content', '141210');
-          $('body').classList.remove('light-mode');
-          $('body').classList.add('dark-mode');
-          $('#toggleDarkMode').checked = true;
-        }
+        darkMode.enabled = !darkMode.enabled;
+        setColorScheme(darkMode.enabled);
       };
 
       const onMenuSelectChange = evt => {
@@ -451,9 +447,7 @@
 
         if (getIsDarkMode() === true) {
           darkMode.enabled = true;
-          $('meta[name="theme-color"]').setAttribute('content', '141210');
-          $('body').classList.add('dark-mode');
-          $('#toggleDarkMode').checked = true;
+          setColorScheme(darkMode.enabled);
         }
 
         fetch('./foodtracker-bands.json')
