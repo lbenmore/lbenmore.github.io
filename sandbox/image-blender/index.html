@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>🥤 Image Blender 🥤</title>
+    <link href="./styles/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <input id="toggleControls" type="checkbox" hidden />
+    <main class="container">
+        <section class="section input">
+            <label class="input__label">
+                <input class="input__input" type="file" />
+            </label>
+        </section>
+        <section class="section output hidden">
+            <div class="output__controls controls">
+                <div class="controls__filter"></div>
+                <div class="controls__select">
+                    <label class="controls__label controls__label--select">
+                        Blending Mode:
+                    </label>
+                </div>
+                <button class="output__button output__button--download">Download Result</button>
+                <label for="toggleControls" class="output__toggle output__toggle--controls"
+                    data-label-open="Open Controls" data-label-close="Hide Controls"></label>
+            </div>
+            <div class="output__canvas"></div>
+        </section>
+    </main>
+
+    <script src="./scripts/main.js" type="module"></script>
+
+    <script>
+        /*
+        ((doc) => {
+            const $ = x => doc.querySelector(x);
+            const btnDownload = $('.btnDownload');
+            const labelInput = $('.labelInput');
+            const input = labelInput.querySelector('input');
+            const output = $('.output');
+            const linkDownload = $('.linkDownload');
+
+            const onBtnDownloadClick = () => {
+                linkDownload.click();
+            }
+
+            const updateLinkDownload = (canvas) => {
+                const img = canvas.toDataURL('image/png').replace('image/png', 'image/octet-stream');
+
+                linkDownload.setAttribute('download', 'output.png');
+                linkDownload.href = img;
+
+                btnDownload.classList.remove('hidden');
+                labelInput.classList.add('hidden');
+            }
+
+            const populateCanvas = (img, ctxProperties) => {
+                return new Promise((resolve) => {
+                    const canvas = doc.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    const {
+                        naturalWidth: sWidth,
+                        naturalHeight: sHeight,
+                    } = img;
+
+                    canvas.width = sWidth;
+                    canvas.height = sHeight;
+
+                    for (const prop in ctxProperties) {
+                        ctx[prop] = ctxProperties[prop];
+                    }
+
+                    ctx.drawImage(img, 0, 0, sWidth, sHeight);
+
+                    resolve(ctx);
+                });
+            }
+
+            const compositeOutput = async (img) => {
+                const canvas = doc.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+
+                const canvasBackground = await populateCanvas(img, {
+                    filter: 'invert(1)',
+                });
+                const canvasForeground = await populateCanvas(img);
+
+                const {
+                    width: sWidth,
+                    height: sHeight,
+                } = canvasBackground.canvas;
+
+                canvas.width = sWidth;
+                canvas.height = sHeight;
+
+                ctx.globalCompositeOperation = 'luminosity';
+
+                ctx.drawImage(canvasBackground.canvas, 0, 0, sWidth, sHeight);
+                ctx.drawImage(canvasForeground.canvas, 0, 0, sWidth, sHeight);
+
+                output.appendChild(canvas);
+                output.classList.remove('hidden');
+
+                updateLinkDownload(canvas);
+            };
+
+            const createImgFromFile = (file) => {
+                return new Promise((resolve) => {
+                    const reader = new FileReader();
+                    const img = new Image();
+
+                    img.addEventListener('load', () => resolve(img));
+                    reader.addEventListener('load', () => (img.src = reader.result));
+                    reader.readAsDataURL(file);
+                });
+            };
+
+            const onFileInput = async (evt) => {
+                const { files } = evt.target;
+                const img = await createImgFromFile(files[0]);
+
+                compositeOutput(img);
+            };
+
+            const onLabelInputDragOver = (evt) => {
+                evt.preventDefault();
+                labelInput.classList.add('active');
+            };
+
+            const onLabelInputDragLeave = (evt) => {
+                evt.preventDefault();
+                labelInput.classList.remove('active');
+            };
+
+            const onLabelInputDrop = async (evt) => {
+                evt.preventDefault();
+
+                const { files } = evt.dataTransfer;
+                const img = await createImgFromFile(files[0]);
+
+                compositeOutput(img);
+
+                labelInput.classList.remove('active');
+            };
+
+            const attachListeners = () => {
+                input.addEventListener('change', onFileInput);
+                btnDownload.addEventListener('click', onBtnDownloadClick);
+                labelInput.addEventListener('dragover', onLabelInputDragOver);
+                labelInput.addEventListener('dragleave', onLabelInputDragLeave);
+                labelInput.addEventListener('drop', onLabelInputDrop);
+            };
+
+            const initFns = () => {
+                attachListeners();
+            };
+
+            doc.readyState === 'complete'
+                ? initFns()
+                : doc.addEventListener('readystatechange', () => (doc.readyState === 'complete' && initFns()));
+
+        })(window.document);
+        */
+    </script>
+</body>
+
+</html>
