@@ -16,9 +16,15 @@ body {
     margin: 0;
     padding: var(--gutter);
     min-height: calc(100 * var(--vh));
+    background-color: var(--bg-primary);
     font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
     color: var(--fg-primary);
-    background-color: var(--bg-primary)
+    letter-spacing: 0.02em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 }
 
 .input {
