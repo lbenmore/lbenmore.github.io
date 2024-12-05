@@ -37,7 +37,7 @@ export default class ImageBlenderControls {
             {
                 name: "brightness",
                 min: 0,
-                max: 20,
+                max: 10,
                 step: 0.1,
                 value: 1,
             },

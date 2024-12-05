@@ -1,5 +1,30 @@
 :root {
     --vh: 1vh;
     --gutter: 16px;
+    --half-gutter: calc(var(--gutter) / 2);
     --anim-dur: 0.2s;
+
+    --white: #f4f0f8;
+    --black: #141018;
+    --bg-primary: var(--white);
+    --fg-primary: var(--black);
+    --acc-primary: blueviolet;
+    --acc-secondary: springgreen;
+}
+
+:root.dark-theme {
+    --bg-primary: var(--black);
+    --fg-primary: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: var(--black);
+        --fg-primary: var(--white);
+    }
+
+    :root.light-theme {
+        --bg-primary: var(--white);
+        --fg-primary: var(--black);
+    }
 }

@@ -82,6 +82,16 @@ import ImageBlender from "./imageBlender.js";
     function initFns() {
         setCssVariables();
         attachEvents();
+
+        try {
+            const { search } = win.location;
+            console.log('%c%s', 'background:blueviolet;color:springgreen', `search`, search);
+            const theme = search.match(/theme=(.*)(?:&|#|$)/)?.[1].replace(/"/g, '');
+            console.log('%c%s', 'background:blueviolet;color:springgreen', `theme`, theme);
+            doc.documentElement.classList.add(theme);
+        } catch (err) {
+            console.error(err);
+        }
     }
 
     doc.readyState === 'complete'
