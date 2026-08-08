@@ -252,5 +252,31 @@
         ]
       }
     ]
+  },
+  {
+    "timestamp": 1741762800000,
+    "label": "Russian Circles",
+    "thumbnail": "russian_circles.webp",
+    "artists": [
+      "Russian Circles",
+      "Pelican"
+    ],
+    "sets": [
+      {
+        "artist": "Russian Circles",
+        "songs": [
+          "309",
+          "Harper Lewis",
+          "Conduit",
+          "Quartered",
+          "Mota",
+          "Geneva",
+          "Betrayal",
+          "Gnosis",
+          "YoungBlood",
+          "Mlàdek"
+        ]
+      }
+    ]
   }
 ]
