@@ -1,0 +1,256 @@
+[
+  {
+    "timestamp": 0,
+    "label": "Name",
+    "thumbnail": "path_to_asset",
+    "artists": [
+      "artist",
+      "artist"
+    ],
+    "sets": [
+      {
+        "artist": "artist",
+        "songs": [
+          "song",
+          "song"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1713942000000,
+    "label": "Babyklok",
+    "thumbnail": "babyklok.webp",
+    "artists": [
+      "BABYMETAL",
+      "Dethklok"
+    ],
+    "sets": [
+      {
+        "artist": "BABYMETAL",
+        "songs": [
+          "BABYMETAL DEATH",
+          "Distortion",
+          "PA PA YA!!",
+          "MAYA",
+          "BxMxC",
+          "Monochrome",
+          "METALI!!",
+          "Megitsune",
+          "Gimme Chocolate!!",
+          "Headbangeeeeerrrrr!!!!!",
+          "Road of Resistance"
+        ]
+      },
+      {
+        "artist": "Dethklok",
+        "songs": [
+          "Deththeme",
+          "Briefcase Full of Cuts",
+          "Birthday Dethday",
+          "Mutilation on a Saturday Night",
+          "Bloodlines",
+          "Awaken",
+          "The Gears",
+          "Castratikron",
+          "Hatredcopter",
+          "Dethsupport",
+          "Duncan Hills Coffee Jingle",
+          "Aortic Desecration",
+          "I Ejaculate Fire",
+          "Murmaider",
+          "Thunderhorse",
+          "Fansong",
+          "SOS",
+          "Go Into the Water"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1723878000000,
+    "label": "Golden Gate Park",
+    "thumbnail": "golden_gate.webp",
+    "artists": [
+      "System of a Down",
+      "Deftones",
+      "The Mars Volta",
+      "Viagra Boys",
+      "Vowws"
+    ],
+    "sets": [
+      {
+        "artist": "System of a Down",
+        "songs": [
+          "Genocidal Humanoidz",
+          "Suite-Pee",
+          "Prison Song",
+          "Mr. Jack",
+          "Soldier Side - Intro",
+          "B.Y.O.B.",
+          "Science",
+          "Deer Dance",
+          "Radio/Video",
+          "ATWA",
+          "Hypnotize",
+          "Needles",
+          "Bounce",
+          "Suggestions",
+          "P.L.U.C.K.",
+          "Psycho",
+          "Chop Suey!",
+          "Lonely Day",
+          "Kill Rock 'n Rol",
+          "Lost in Hollywood",
+          "Aerials",
+          "Know",
+          "Toxicity",
+          "Sugar"
+        ]
+      },
+      {
+        "artist": "The Mars Volta",
+        "songs": [
+          "Roulette Dares (The Haunt of)",
+          "L'Via L'Viaquez",
+          "Drunkship of Lanterns",
+          "Graveyard Love"
+        ]
+      },
+      {
+        "artist": "Viagra Boys",
+        "songs": [
+          "Ain't Nice",
+          "Slow Learner",
+          "Punk Rock Loser",
+          "Troglodyte",
+          "Ain't No Thief",
+          "Up All Night",
+          "Add",
+          "Sports",
+          "Research Chemicals"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1728198000000,
+    "label": "Korjira",
+    "thumbnail": "korjira.webp",
+    "artists": [
+      "Korn",
+      "Gojira",
+      "Spiritbox"
+    ],
+    "sets": [
+      {
+        "artist": "Korn",
+        "songs": [
+          "Here to Stay",
+          "Dead Bodies Everywhere",
+          "Got the Life",
+          "A.D.I.D.A.S.",
+          "It's On!",
+          "Good God",
+          "Start The Healing",
+          "Blind",
+          "Ball Tongue",
+          "Clown",
+          "Shoots and Ladders",
+          "Twist",
+          "Make Me Bad",
+          "Falling Away from Me",
+          "Oildale (Leave Me Alone)",
+          "Freak On a Leash"
+        ]
+      },
+      {
+        "artist": "Gojira",
+        "songs": [
+          "Born For One Thing",
+          "The Axe",
+          "Backbone",
+          "Stranded",
+          "The Cell",
+          "Flying Whales",
+          "Grind",
+          "Another World",
+          "L'enfant Sauvage",
+          "Mea Culpa (Ah! Ça ira!)",
+          "Silvera",
+          "Amazonia"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1728543600000,
+    "label": "Aftershock 2024",
+    "thumbnail": "aftershock_2024.webp",
+    "artists": [
+      "Filter",
+      "Ministry",
+      "Halestorm",
+      "Till Lindeman",
+      "Slayer",
+      "Highly Suspect",
+      "Dropkick Murphys",
+      "Rise Against",
+      "Evanescence",
+      "Slipknot",
+      "Anthrax",
+      "Iron Maiden",
+      "Badflower",
+      "NOTHING MORE",
+      "Tom Morello",
+      "Flogging Molly"
+    ],
+    "sets": [
+      {
+        "artist": "",
+        "songs": [
+          "",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1734076800000,
+    "label": "Zeal &amp; Ardor",
+    "thumbnail": "zeal_and_ardor.webp",
+    "artists": [
+      "Zeal &amp; Ardor",
+      "Gaerea",
+      "Zetra"
+    ],
+    "sets": [
+      {
+        "artist": "Zeal &amp; Ardor",
+        "songs": [
+          "the Bird, the Lion and the Wildkin",
+          "Wake of a Nation",
+          "Götterdämmerung",
+          "Ship on Fire",
+          "Erase",
+          "Gravedigger's Chant",
+          "Tuskegee",
+          "Blood in the River",
+          "Kilonova",
+          "Run",
+          "Golden Liar",
+          "Sugarcoat",
+          "Death to the Holy",
+          "to my ilk",
+          "Feed the Machine",
+          "Devil Is Fine",
+          "une ville vide",
+          "Trust No One",
+          "Built on Ashes",
+          "I Caught You",
+          "Clawing Out"
+        ]
+      }
+    ]
+  }
+]

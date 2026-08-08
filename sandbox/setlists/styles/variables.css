@@ -1,0 +1,12 @@
+:root {
+  --bg-primary: #f8f0ff;
+  --fg-primary: #08000f;
+  --xx-primary: #8800ff;
+
+  --card-inset: 60px;
+  --card-padding: 24px;
+  --num-cols: 3;
+  --num-rows: 3.5;
+
+  --anim-speed: 1s;
+}
