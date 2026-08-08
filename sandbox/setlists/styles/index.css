@@ -121,6 +121,6 @@ main {
 }
 
 .cards:has(.card__toggle:checked) ~ .overlay {
-  background-color: rgba(0, 0, 0, 666);
+  background-color: rgba(0, 0, 0, .666);
   pointer-events: auto;
 }
