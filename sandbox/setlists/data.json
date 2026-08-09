@@ -278,5 +278,172 @@
         ]
       }
     ]
+  },
+  {
+    "timestamp": 1746342000000,
+    "label": "Sessanta V2.0",
+    "thumbnail": "sessanta.webp",
+    "artists": [
+      "A Perfect Circle",
+      "Primus",
+      "Puscifer"
+    ],
+    "sets": [
+      {
+        "artist": "A Perfect Circle",
+        "songs": [
+          "The Package",
+          "Disillusioned",
+          "Blue"
+        ]
+      },
+      {
+        "artist": "Primus",
+        "songs": [
+          "Here Comes the Bastards",
+          "Groundhog's Day",
+          "Duchess and the Proverbial Mind Spread"
+        ]
+      },
+      {
+        "artist": "Puscifer",
+        "songs": [
+          "Man Overboard",
+          "Horizons",
+          "Indigo Children (Versatile Mix)"
+        ]
+      },
+      {
+        "artist": "Puscifer &amp; Primus",
+        "songs": [
+          "Little Lord Fentanyl"
+        ]
+      },
+      {
+        "artist": "Primus",
+        "songs": [
+          "Welcome to This World",
+          "My Name Is Mud",
+          "Jerry Was a Race Car Driver"
+        ]
+      },
+      {
+        "artist": "Puscifer",
+        "songs": [
+          "Postulous",
+          "No Angel",
+          "Bullet Train to Iowa",
+          "The Algorithm"
+        ]
+      },
+      {
+        "artist": "A Perfect Circle",
+        "songs": [
+          "The Contrarian",
+          "The Doomed",
+          "Weak and Powerless",
+          "The Algorithm"
+        ]
+      },
+      {
+        "artist": "Puscifer",
+        "songs": [
+          "The Humbling River",
+          "Polar Bear",
+          "The Remedy"
+        ]
+      },
+      {
+        "artist": "Primus",
+        "songs": [
+          "Pablo's Hippos",
+          "Too Many Puppies"
+        ]
+      },
+      {
+        "artist": "A Perfect Circle",
+        "songs": [
+          "The Noose",
+          "Kindred",
+          "Judith"
+        ]
+      },
+      {
+        "artist": "Primus",
+        "songs": [
+          "Southbound Pachyderm"
+        ]
+      },
+      {
+        "artist": "Puscifer",
+        "songs": [
+          "Grand Canyon"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1748934000000,
+    "label": "The Squirrely Years",
+    "thumbnail": "squirrely_years.webp",
+    "artists": [
+      "Ministry"
+    ],
+    "sets": [
+      {
+        "artist": "Ministry",
+        "songs": [
+          "Work For Love",
+          "Here We Go",
+          "All Day",
+          "I'll Do Anything For You",
+          "Same Old Madness",
+          "Just Like You",
+          "Over The Shoulder",
+          "We Believe",
+          "I'm Not An Effigy",
+          "Revenge",
+          "Every Day Is Halloween",
+          "Ricky's Hand",
+          "Da Ya Think I'm Sexy"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1754204400000,
+    "label": "Skeletour 2025",
+    "thumbnail": "skeletour_2025.webp",
+    "artists": [
+      "Ghost"
+    ],
+    "sets": [
+      {
+        "artist": "Ghost",
+        "songs": [
+          "Peacefield",
+          "Lachryma",
+          "Spirit",
+          "Per Aspera Ad Inferi",
+          "Faith",
+          "Call Me Little Sunshine",
+          "The Future Is A Foreign Land",
+          "Devil Church",
+          "Cirice",
+          "Darkness At The Heart Of My Love",
+          "Satanized",
+          "Satan Prayer",
+          "Umbra",
+          "Year Zero",
+          "He Is",
+          "Rats",
+          "Kiss The Go-Goat",
+          "Mummy Dust",
+          "Monstrance Clock",
+          "Mary On A Cross",
+          "Dance Macabre"
+        ]
+      }
+    ]
   }
 ]
