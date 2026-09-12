@@ -8,5 +8,7 @@
   --num-cols: 3;
   --num-rows: 3.5;
 
+  --card-front-font: 16px/36px sans-serif;
+
   --anim-speed: 1s;
 }

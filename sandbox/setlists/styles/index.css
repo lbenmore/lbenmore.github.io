@@ -63,17 +63,29 @@ main {
 
 .card__image {
   width: 100%;
-  height: calc(100% - 30px); /* @todo: store variable */
-  background-image: linear-gradient(blueviolet, springgreen);
-  background-image: var(--setlist-image);
+  height: 100%;
+  background-image: var(--setlist-image, linear-gradient(blueviolet, springgreen));
   background-position: center;
   background-size: cover;
   transform: rotateY(0deg);
 }
 
 .card__title {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 0;
   padding-inline-start: 16px; /* @todo: gutter variable? */
-  line-height: 30px; /* @todo: store variable */
+  line-height: 30px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--bg-primary);
+  font: var(--card-front-font);
+  transition: opacity 0.3s;
+  opacity: 0;
+
+  .card__side--front:hover & {
+    opacity: 1;
+  }
 }
 
 .card__side--back {
