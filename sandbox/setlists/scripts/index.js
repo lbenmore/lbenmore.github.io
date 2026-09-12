@@ -1,6 +1,21 @@
 import * as x from "./helpers.js";
 
-const init = ([template, ...lists]) => {
+const months = [
+  "January", "February", "March", "April",
+  "May", "June", "July", "August",
+  "September", "October", "November", "December",
+];
+
+const parseDate = (ts) => {
+  const dt = new Date(ts);
+  const y = dt.getFullYear();
+  const d = dt.getDate();
+  const m = dt.getMonth();
+
+  return `${months[m]} ${d}, ${y}`;
+};
+
+  const init = ([template, ...lists]) => {
   const markup = lists.map((list, idx) => {
     return (
       `<div class="card" style="--setlist-image: url('../assets/${list.thumbnail}')">
@@ -19,7 +34,7 @@ const init = ([template, ...lists]) => {
                 <input type="radio" name="cards" value="none" hidden>
               </label>
               <h1 class="card__title">${list.label}</h1>
-              <p>${new Date(list.timestamp).toLocaleDateString()}</p>
+              <p>${parseDate(list.timestamp)}</p>
               <ul>
                 ${list.artists.map((artist) => (
                   `<li class="card__artist">${artist}</li>`

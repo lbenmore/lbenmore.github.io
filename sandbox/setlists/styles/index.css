@@ -90,6 +90,7 @@ main {
 
 .card__side--back {
   padding: var(--card-padding);
+  font-family: sans-serif;
   overflow: hidden;
   transform: rotateY(180deg);
 }
