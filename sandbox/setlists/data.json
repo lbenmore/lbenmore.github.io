@@ -27,22 +27,6 @@
     ],
     "sets": [
       {
-        "artist": "BABYMETAL",
-        "songs": [
-          "BABYMETAL DEATH",
-          "Distortion",
-          "PA PA YA!!",
-          "MAYA",
-          "BxMxC",
-          "Monochrome",
-          "METALI!!",
-          "Megitsune",
-          "Gimme Chocolate!!",
-          "Headbangeeeeerrrrr!!!!!",
-          "Road of Resistance"
-        ]
-      },
-      {
         "artist": "Dethklok",
         "songs": [
           "Deththeme",
@@ -63,6 +47,22 @@
           "Fansong",
           "SOS",
           "Go Into the Water"
+        ]
+      },
+      {
+        "artist": "BABYMETAL",
+        "songs": [
+          "BABYMETAL DEATH",
+          "Distortion",
+          "PA PA YA!!",
+          "MAYA",
+          "BxMxC",
+          "Monochrome",
+          "METALI!!",
+          "Megitsune",
+          "Gimme Chocolate!!",
+          "Headbangeeeeerrrrr!!!!!",
+          "Road of Resistance"
         ]
       }
     ]
@@ -442,6 +442,460 @@
           "Monstrance Clock",
           "Mary On A Cross",
           "Dance Macabre"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1754463600000,
+    "label": "Peel it Back 2025",
+    "thumbnail": "peel_it_back_2025.webp",
+    "artists": [
+      "Nine Inch Nails",
+      "Boyz Noize"
+    ],
+    "sets": [
+      {
+        "artist": "Nine Inch Nails",
+        "songs": [
+          "Right Where It Belongs",
+          "Ruiner",
+          "Piggy",
+          "Wish",
+          "March of the Pigs",
+          "Reptile",
+          "Heresy",
+          "Copy of A",
+          "Gave Up",
+          "Vessel",
+          "As Alive As You Need Me To Be",
+          "Sin",
+          "Came Back Haunted",
+          "Somewhat Damaged",
+          "Less Than",
+          "Closer",
+          "The Perfect Drug",
+          "The Hand That Feeds",
+          "Head Like a Hole",
+          "Hurt"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1755846000000,
+    "label": "Bigger & Weirder",
+    "thumbnail": "weird_al_bigger_weirder.webp",
+    "artists": [
+      "Weird Al Yankovic",
+      "Puddles Pity Party"
+    ],
+    "sets": [
+      {
+        "artist": "Weird Al Yankovic",
+        "songs": [
+          "Fun Zone",
+          "Tacky",
+          "Mission Statement",
+          "Polkamania!",
+          "Everything You Know Is Wrong",
+          "One More Minute",
+          "Another One Rides the Bus",
+          "Smells Like Nirvana",
+          "Dare to Be Stupid",
+          "Party In the CIA",
+          "It's All About the Pentiums",
+          "Bedrock Anthem",
+          "My Bologna",
+          "Ricky",
+          "Ode to a Superhero",
+          "I Love Rocky Road",
+          "Eat It",
+          "Like a Surgeon",
+          "Word Crimes",
+          "Canadian Idiot",
+          "Fat",
+          "Captain Underpants Theme Song",
+          "Now You Know",
+          "It's My World (And We're All Living in It)",
+          "Skipper Dan",
+          "Ebay",
+          "Stop Forwarding That Crap to Me",
+          "White & Nerdy",
+          "Amish Paradise",
+          "The Saga Begins",
+          "Yoda"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1759388400000,
+    "label": "Aftershock 2025",
+    "thumbnail": "aftershock_2025.webp",
+    "artists": [
+      "Alkaline Trio",
+      "Testament",
+      "Acid Bath",
+      "Forbidden",
+      "Lacuna Coil",
+      "Fear Factory",
+      "Alestorm",
+      "Kerry King",
+      "Bruce Dickinson",
+      "A Perfect Circle",
+      "In This Moment",
+      "Mudvayne",
+      "Marilyn Manson",
+      "Rob Zombie"
+    ],
+    "sets": [
+      {
+        "artist": "artist",
+        "songs": [
+          "",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1760079600000,
+    "label": "nEverest Duality",
+    "thumbnail": "neverest_duality.webp",
+    "artists": [
+      "Halestorm",
+      "Lindsey Stirling",
+      "Apocalyptica"
+    ],
+    "sets": [
+      {
+        "artist": "Halestorm",
+        "songs": [
+          "Fallen Star",
+          "I Miss the Misery",
+          "Love Bites (So Do I)",
+          "Freak Like Me",
+          "Gather the Lambs",
+          "Darkness Always Wins",
+          "Like a Woman Can",
+          "Shiver",
+          "Break In",
+          "Raise Your Horns",
+          "How Will You Remember Me?",
+          "I Am the Fire",
+          "Rain Your Blood On Me",
+          "WATCH OUT!",
+          "Back From The Dead",
+          "Everest",
+          "I Gave You Everything",
+          "Shatter Me",
+          "Here's to Us"
+        ]
+      },
+      {
+        "artist": "Apocalyptica",
+        "songs": [
+          "Battery",
+          "For Whom The Bell Tolls",
+          "Master of Puppets",
+          "Enter Sandman",
+          "The Four Horsemen",
+          "Nothing Else Matters",
+          "Seek & Destroy"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1771574400000,
+    "label": "Skeletour 2026",
+    "thumbnail": "skeletour_2026.webp",
+    "artists": [
+      "Ghost"
+    ],
+    "sets": [
+      {
+        "artist": "Ghost",
+        "songs": [
+          "Peacefield",
+          "Lachryma",
+          "Spirit",
+          "Faith",
+          "Call Me Little Sunshine",
+          "The Future Is A Foreign Land",
+          "Devil Church",
+          "Cirice",
+          "Darkness At The Heart Of My Love",
+          "Satanized",
+          "Satan Prayer",
+          "Umbra",
+          "Year Zero",
+          "He Is",
+          "Rats",
+          "Kiss The Go-Goat",
+          "Mummy Dust",
+          "Monstrance Clock",
+          "Mary On A Cross",
+          "Dance Macabre",
+          "Square Hammer"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1773558000000,
+    "label": "Peel it Back 2026 - San Francisco",
+    "thumbnail": "peel_it_back_03_15_26.jpg.webp",
+    "artists": [
+      "Nine Inch Nails",
+      "Boyz Noize"
+    ],
+    "sets": [
+      {
+        "artist": "Nine Inch Nails",
+        "songs": [
+          "Right Where It Belongs",
+          "Ruiner",
+          "Piggy",
+          "Wish",
+          "March of the Pigs",
+          "The Frail",
+          "Reptile",
+          "Heresy",
+          "Copy of A",
+          "Gave Up",
+          "Vessel",
+          "Closer",
+          "Parasite",
+          "As Alive as You Need Me to Be",
+          "Mr. Self Destruct",
+          "Less Than",
+          "The Perfect Drug",
+          "I'm Afraid of Americans",
+          "The Hand That Feeds",
+          "Head Like a Hole",
+          "Hurt"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1773644400000,
+    "label": "Peel it Back 2026 - Sacramento",
+    "thumbnail": "peel_it_back_03_16_26.jpg.webp",
+    "artists": [
+      "Nine Inch Nails",
+      "Boyz Noize"
+    ],
+    "sets": [
+      {
+        "artist": "Nine Inch Nails",
+        "songs": [
+          "Something I Can NeverHave",
+          "Non-Entity",
+          "Piggy",
+          "Wish",
+          "March of the Pigs",
+          "The Frail",
+          "Reptile",
+          "Find My Way",
+          "Copy of A",
+          "Gave Up",
+          "She's Gone Away",
+          "Closer",
+          "Parasite",
+          "As Alive as You Need Me to Be",
+          "Mr. Self Destruct",
+          "Less Than",
+          "The Perfect Drug",
+          "Burn",
+          "The Hand That Feeds",
+          "Head Like a Hole",
+          "Hurt"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1778482800000,
+    "label": "Normal Isn't",
+    "thumbnail": "normal_isnt.webp",
+    "artists": [
+      "Puscifer"
+    ],
+    "sets": [
+      {
+        "artist": "Puscifer",
+        "songs": [
+          "Thrust",
+          "Self Evident",
+          "Bad Wolf",
+          "Normal Isn't",
+          "The Algorithm",
+          "The Quiet Parts",
+          "Pendulum",
+          "The Arsonist",
+          "Mantastic",
+          "Bullet Train To Iowa",
+          "The Remedy",
+          "The Humbling River",
+          "ImpetoUs",
+          "Momma Sed (Versatile Mix)",
+          "Seven One",
+          "Grand Canyon",
+          "Conditions of My Parole",
+          "A Public Stoning"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1780038000000,
+    "label": "ApocalyptHUca",
+    "thumbnail": "apocalypthuca.webp",
+    "artists": [
+      "The HU",
+      "Apocalyptica"
+    ],
+    "sets": [
+      {
+        "artist": "The HU",
+        "songs": [
+          "Lost Soul",
+          "Upright Destined Mongol",
+          "The Men",
+          "The Real You",
+          "Warrior Chant",
+          "Mother Nature",
+          "Black Thunder",
+          "Yuve Yuve Yu",
+          "Wolf Totem",
+          "This is Mongol",
+          "The Trooper"
+        ]
+      },
+      {
+        "artist": "Apocalyptica",
+        "songs": [
+          "Ride the Lightning",
+          "Enter Sandman",
+          "Blackened",
+          "The Call of Ktulu",
+          "The Four Horsemen",
+          "Master of Puppets",
+          "Nothing Else Matters",
+          "Seek & Destroy"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1780470000000,
+    "label": "Apocalyptica",
+    "thumbnail": "apocalyptica_06_03_26.jpg",
+    "artists": [
+      "Apocalyptica"
+    ],
+    "sets": [
+      {
+        "artist": "Apocalyptica",
+        "songs": [
+          "Ride the Lightning",
+          "Enter Sandman",
+          "Creeping Death",
+          "For Whome the Bell Tolls",
+          "St. Anger",
+          "Blackened",
+          "Master of Puppets",
+          "Nothing Else Matters",
+          "Seek & Destroy"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1789887600000,
+    "label": "Freaks on Parade",
+    "thumbnail": "freaks_on_parade.webp",
+    "artists": [
+      "Rob Zombie",
+      "Marilyn Manson",
+      "The HU",
+      "Orgy"
+    ],
+    "sets": [
+      {
+        "artist": "Rob Zombie",
+        "songs": [
+          "",
+          ""
+        ]
+      },
+      {
+        "artist": "Marilyn Manson",
+        "songs": [
+          "",
+          ""
+        ]
+      },
+      {
+        "artist": "The HU",
+        "songs": [
+          "",
+          ""
+        ]
+      },
+      {
+        "artist": "Orgy",
+        "songs": [
+          "",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1790838000000,
+    "label": "Aftershock 2026",
+    "thumbnail": "aftershock_2026.webp",
+    "artists": [
+      "Apocalyptica",
+      "Dethklok",
+      "BABYMETAL",
+      "TOOL"
+    ],
+    "sets": [
+      {
+        "artist": "",
+        "songs": [
+          "",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1797667200000,
+    "label": "APusciwaii",
+    "thumbnail": "apusciwaii.webp",
+    "artists": [
+      "A Perfect Circle",
+      "Puscifer"
+    ],
+    "sets": [
+      {
+        "artist": "A Perfect Circle",
+        "songs": [
+          "",
+          ""
+        ]
+      },
+      {
+        "artist": "Puscifer",
+        "songs": [
+          "",
+          ""
         ]
       }
     ]
