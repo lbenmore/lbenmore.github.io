@@ -16,8 +16,7 @@ const parseDate = (ts) => {
 };
 
   const init = ([template, ...lists]) => {
-  const markup = lists.map((list, idx) => {
-    return (
+    const markup = lists.map((list, idx) => (
       `<div class="card" style="--setlist-image: url('../assets/${list.thumbnail}')">
         <input class="card__toggle" type="radio" name="cards" value="card-${idx}" id="card-${idx}" hidden>
         <div class="card__wrapper">
@@ -52,10 +51,10 @@ const parseDate = (ts) => {
           </div>
         </div>
       </div>`
-    );
-  }).join("");
+    ).join("");
 
   x._(".cards").innerHTML = markup;
+  document.documentElement.style.setProperty("--scrollbar-buffer", `${window.innerWidth - document.documentElement.clientWidth}px`);
 };
 
 fetch("./data.json")
