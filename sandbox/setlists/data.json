@@ -899,5 +899,65 @@
         ]
       }
     ]
+  },
+  {
+    "timestamp": 1789887600000,
+    "label": "Freaks on Parade",
+    "thumbnail": "freaks_on_parade.webp",
+    "artists": [
+      "Rob Zombie",
+      "Marilyn Manson",
+      "The HU"
+    ],
+    "sets": [
+      {
+        "artist": "Rob Zombie",
+        "songs": [
+          "F.T.W. 84",
+          "Tarantula",
+          "Superbeast",
+          "The Triumph of King Freak (A Crypt of Preservation and Superstition)",
+          "More Human Than Human",
+          "Scum of the Earth",
+          "Well, Everybody's Fucking in a U.F.O.",
+          "Living Dead Girl",
+          "Heathen Days",
+          "Feel So Numb",
+          "House of 1000 Corpses",
+          "Never Gonna Stop (The Red, Red Kroovy)",
+          "Thunder Kiss '65",
+          "Dragula"
+        ]
+      },
+      {
+        "artist": "Marilyn Manson",
+        "songs": [
+          "Exit Wound",
+          "Disposable Teens",
+          "Angel With the Scabbed Wings",
+          "This Is the New Shit",
+          "Front Toward Enemy",
+          "The Nobodies",
+          "Tourniquet",
+          "The Dope Show",
+          "Sweet Dreams (Are Made of This)",
+          "mOBSCENE",
+          "The Beuatiful People"
+        ]
+      },
+      {
+        "artist": "The HU",
+        "songs": [
+          "Lost Soul",
+          "Horsemen",
+          "Grey Hun",
+          "The Real You",
+          "Sad but True",
+          "Yuve Yuve Yu",
+          "Wolf Totem",
+          "This Is Mongol"
+        ]
+      }
+    ]
   }
 ]
