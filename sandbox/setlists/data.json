@@ -207,10 +207,214 @@
     ],
     "sets": [
       {
-        "artist": "",
+        "artist": "Filter",
         "songs": [
-          "",
+          "You Walk Away",
+          "(Can't You) Trip Like I Do",
+          "Obliteration",
+          "Take a Picture",
+          "Welcome To The Fold",
+          "Hey Man Nice Shot",
           ""
+        ]
+      },
+      {
+        "artist": "Ministry",
+        "songs": [
+          "B.D.E.",
+          "Goddamn White Trash",
+          "Just Stop Oil",
+          "Stigmata",
+          "N.W.O.",
+          "Just One Fix",
+          "Thieves",
+          "Jesus Built My Hotrod"
+        ]
+      },
+      {
+        "artist": "Halestorm",
+        "songs": [
+          "I Miss the Misery",
+          "Love Bites (So Do I)",
+          "I Get Off",
+          "Freak Like Me",
+          "can u see me in the dark?",
+          "Familiar Taste of Poison",
+          "Takes My Life",
+          "The Steeple"
+        ]
+      },
+      {
+        "artist": "Till Lindemann",
+        "songs": [
+          "Zunge",
+          "Fat",
+          "Altes Fleisch",
+          "Golden Shower",
+          "Sport frei",
+          "Blut",
+          "Praise Abort",
+          "Fish On",
+          "Allesfresser",
+          "Du hast kein Herz",
+          "Skills in Pills",
+          "Ich hasse Kinder"
+        ]
+      },
+      {
+        "artist": "Slayer",
+        "songs": [
+          "Raining Blood"
+        ]
+      },
+      {
+        "artist": "Highly Suspect",
+        "songs": [
+          "Bath Salts",
+          "Mexico",
+          "Plastic Boxes",
+          "Lydia",
+          "My Name Is Human",
+          "Run For Your Death (More Pills)",
+          "Pink Lullabye"
+        ]
+      },
+      {
+        "artist": "Dropkick Murphys",
+        "songs": [
+          "The Boys Are Back",
+          "The State Of Massachusetts",
+          "Johnny, I Hardly Knew Ya",
+          "Sirens (Bonus Track)",
+          "Going Out In Style",
+          "Smash Shit Up",
+          "Rose Tattoo",
+          "Citizen C.I.A.",
+          "Worker's Song",
+          "I'm Shipping up to Boston"
+        ]
+      },
+      {
+        "artist": "Rise Against",
+        "songs": [
+          "Good Left Undone",
+          "Prayer of the Refugee",
+          "Savior"
+        ]
+      },
+      {
+        "artist": "Evanescence",
+        "songs": [
+          "Broken Pieces Shine",
+          "Made of Stone",
+          "The Game Is Over",
+          "Going Under",
+          "Take Cover",
+          "Lithium",
+          "Wasted On You",
+          "The End of the Dream",
+          "Better Without You",
+          "Call Me When You're Sober",
+          "Imaginary",
+          "Use My Voice",
+          "Blind Belief",
+          "Bring Me To Life"
+        ]
+      },
+      {
+        "artist": "Slipknot",
+        "songs": [
+          "742617000027",
+          "(Sic)",
+          "Eyeless",
+          "Wait and Bleed",
+          "Get This",
+          "Eeyore",
+          "Me Inside",
+          "Liberate",
+          "Purity",
+          "Prosthetics",
+          "No Life",
+          "Only One",
+          "Spit It Out",
+          "Surfacing",
+          "Scissors"
+        ]
+      },
+      {
+        "artist": "Anthrax",
+        "songs": [
+          "A.I.R.",
+          "Got the Time",
+          "Caught In a Mosh",
+          "Madhouse",
+          "Metal Thrashing Mad",
+          "I Am the Law",
+          "Antisocial",
+          "Indians"
+        ]
+      },
+      {
+        "artist": "Iron Maiden",
+        "songs": [
+          "Caught Somewhere In Time",
+          "Stranger in a Strange Land",
+          "The Writing On The Wall",
+          "Days of Future Past",
+          "The Time Machine",
+          "The Prisoner",
+          "Death of the Celts",
+          "Can I Play with Madness",
+          "Heaven Can Wait",
+          "Alexander the Great (356-323 B.C.)",
+          "Fear of the Dark",
+          "Iron Maiden",
+          "Hell On Earth",
+          "The Trooper",
+          "Wasted Years"
+        ]
+      },
+      {
+        "artist": "Badflower",
+        "songs": [
+          "Don't Hate Me",
+          "Fukboi",
+          "The Jester",
+          "Heroin",
+          "Ghost",
+          "30",
+          "Stalker",
+          "Detroit"
+        ]
+      },
+      {
+        "artist": "NOTHING MORE",
+        "songs": [
+          "Go to War",
+          "Let 'em Burn"
+        ]
+      },
+      {
+        "artist": "Tom Morello",
+        "songs": [
+          "Soldier In the Army of Love",
+          "Vigilante Nocturno",
+          "Let's Get The Party Started (feat. Bring Me The Horizon)",
+          "Hold The Line (feat. grandson)",
+          "Cochise",
+          "Like a Stone",
+          "The Ghost of Tom Joan",
+          "Killing In the Name"
+        ]
+      },
+      {
+        "artist": "Flogging Molly",
+        "songs": [
+          "Drunken Lullabies",
+          "If I Ever Leave This World Alive",
+          "What's Left of the Flag",
+          "Devil's Dance Flor",
+          "Float"
         ]
       }
     ]
@@ -551,10 +755,185 @@
     ],
     "sets": [
       {
-        "artist": "artist",
+        "artist": "Alkaline Trio",
         "songs": [
-          "",
+          "Private Eye",
+          "Calling All Skeletons",
+          "Versions of You",
+          "Mercy Me",
+          "Sadie",
+          "Oblivion",
+          "Bleeding Out",
+          "In Vein",
+          "Cringe",
+          "We've Had Enough"
+        ]
+      },
+      {
+        "artist": "Testament",
+        "songs": [
+          "Rise Up",
+          "Practice What You Preach",
+          "Sins of Omission",
+          "More Than Meets the Eye",
+          "Infanticide A.I.",
+          "The Haunting",
+          "Electric Crown",
+          "Return to Serenity",
+          "Into the Pit",
           ""
+        ]
+      },
+      {
+        "artist": "Acid Bath",
+        "songs": [
+          "Tranquilized",
+          "Bleed Me an Ocean",
+          "Venus Blue",
+          "New Death Sensaition",
+          "Dead Girl",
+          "Graveflower",
+          "Paegan Love Song",
+          "Dr. Seuss Is Dead"
+        ]
+      },
+      {
+        "artist": "Forbidden",
+        "songs": [
+          "Divided by Zero",
+          "Mutually Assured Dysfunction"
+        ]
+      },
+      {
+        "artist": "Lacuna Coil",
+        "songs": [
+          "Blood, Tears, Dust",
+          "Layers of Time",
+          "Hosting the Shadow",
+          "Gravity",
+          "Oxygen",
+          "Never Dawn"
+        ]
+      },
+      {
+        "artist": "Fear Factory",
+        "songs": [
+          "Demanufacture",
+          "Zero Signal",
+          "Replica",
+          "H-K (Hunter-Killer)",
+          "Shock",
+          "Edgecrusher",
+          "Linchpin"
+        ]
+      },
+      {
+        "artist": "Alestorm",
+        "songs": [
+          "Keelhauled",
+          "Killed to Death by Piracy",
+          "Mexico",
+          "Hangover (Taio Cruz Cover)",
+          "P.A.R.T.Y.",
+          "Shit Boat (No Fans)",
+          "Drink",
+          "Fucked with an Anchor"
+        ]
+      },
+      {
+        "artist": "Kerry King",
+        "songs": [
+          "Residue",
+          "Two Fists",
+          "Idle Hands",
+          "Trophies Of The Tyrant",
+          "Disciple",
+          "From Hell I Rise"
+        ]
+      },
+      {
+        "artist": "Bruce Dickinson",
+        "songs": [
+          "Accident of Birth",
+          "Abduction",
+          "Laughing in the Hiding Bush",
+          "Chemical Wedding",
+          "Flash of the Blade",
+          "Resurrection Men",
+          "Book of Thel"
+        ]
+      },
+      {
+        "artist": "A Perfect Circle",
+        "songs": [
+          "The Package",
+          "Disillusioned",
+          "Rose",
+          "Blue",
+          "The Contrarian",
+          "The Doomed",
+          "Weak and Powerless",
+          "The Outsider",
+          "Counting Bodies Like Sheep to the Rhythm of the War Drums",
+          "The Noose",
+          "TalkTalk",
+          "Judith"
+        ]
+      },
+      {
+        "artist": "In This Moment",
+        "songs": [
+          "The Purge",
+          "Sanctify Me",
+          "Roots",
+          "Blood",
+          "Sick Like Me",
+          "Adrenalize",
+          "Whore"
+        ]
+      },
+      {
+        "artist": "Mudvayne",
+        "songs": [
+          "Dig",
+          "Internal Primates Forever",
+          "Death Blooms",
+          "Nothing To Gein",
+          "Dull Boy",
+          "Sticks and Stones",
+          "World So Cold",
+          "Not Falling",
+          "Happy?"
+        ]
+      },
+      {
+        "artist": "Marilyn Manson",
+        "songs": [
+          "Disposable Teens",
+          "Angel with the Scabbed Wings",
+          "Tourniquet",
+          "Sacrilegious",
+          "This Is the New Shit",
+          "mOBSCENE",
+          "The Dope Show",
+          "As Sick As The Secrets Within",
+          "Sweet Dreams (Are Made of This)",
+          "The Beautiful People"
+        ]
+      },
+      {
+        "artist": "Rob Zombie",
+        "songs": [
+          "The Triumph of King Freak (A Crypt of Preservation and Superstition)",
+          "Dead City Radio and the New Gods of Supertown",
+          "Feel So Numb",
+          "Well, Everybody's Fucking in a U.F.O.",
+          "What Lurks On Channel X?",
+          "Superbeast",
+          "Lords of Salem",
+          "House of 1000 Corpses",
+          "More Human Than Human",
+          "Dragula"
         ]
       }
     ]
