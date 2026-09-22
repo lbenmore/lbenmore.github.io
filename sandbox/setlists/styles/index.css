@@ -20,7 +20,7 @@ main {
 
 .card {
   position: relative;
-  width: calc(100vw / var(--num-cols));
+  width: calc((100vw - var(--scrollbar-offset, 0px)) / var(--num-cols));
   height: calc(100vh / var(--num-rows));
   color: var(--fg-primary);
 }
@@ -29,8 +29,8 @@ main {
   position: relative;
   inset-block-start: 0;
   inset-inline-start: 0;
-  width: calc(100vw / var(--num-cols));
-  height: calc(100vh / var(--num-rows));
+  width: 100%;
+  height: 100%;
   perspective: 100vw;
   transition:
     position var(--anim-speed) allow-discrete,
