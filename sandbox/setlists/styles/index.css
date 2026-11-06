@@ -95,6 +95,28 @@ main {
   transform: rotateY(180deg);
 }
 
+.card__artists {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .card__artist {
+
+    label {
+      padding: 6px 12px;
+      border-radius: 999px;
+      background-color: rgba(128, 128, 128, 0.5);
+      border: 2px solid rgb(128, 128, 128);
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  }
+}
+
 .card__toggle:checked {
   & + .card__wrapper {
     position: fixed;
@@ -136,4 +158,12 @@ main {
 .cards:has(.card__toggle:checked) ~ .overlay {
   background-color: rgba(0, 0, 0, .666);
   pointer-events: auto;
+}
+
+.card__side--back:has(.card__artistToggle:checked) .card__setData {
+  display: none;
+}
+
+.card__side--back:has(.card__artistToggle:checked) .card__artistToggle:checked + .card__setData {
+  display: block;
 }

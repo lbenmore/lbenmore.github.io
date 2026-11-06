@@ -19,34 +19,41 @@ const generateCard = (setlistData, idx) => {
   const card = document.createElement("div");
   const cardMarkup = (
     `<input class="card__toggle" type="radio" name="cards" value="card-${idx}" id="card-${idx}" hidden>
-      <div class="card__wrapper">
-        <div class="card__inner">
-          <div class="card__side card__side--front">
+    <div class="card__wrapper">
+      <div class="card__inner">
+        <div class="card__side card__side--front">
           <label class="card__label" for="card-${idx}">
             <div class="card__image"></div>
             <div class="card__title">${setlistData.label}</div>
           </label>
         </div>
-        <div class="card__side card__side--back">
-          <label>
-            Back
-            <input type="radio" name="cards" value="none" hidden>
-          </label>
-          <h1 class="card__title">${setlistData.label}</h1>
-          <p>${parseDate(setlistData.timestamp)}</p>
-          <ul>
-            ${setlistData.artists.map((artist) => (
-              `<li class="card__artist">${artist}</li>`
-            )).join("")}
-          </ul>
-          ${setlistData.sets.map((set) => (
-            `<h2 class="card__artist">${set.artist}</h2>
+      <div class="card__side card__side--back">
+        <label>
+          Back
+          <input type="radio" name="cards" value="none" hidden>
+        </label>
+        <h1 class="card__title">${setlistData.label}</h1>
+        <p>${parseDate(setlistData.timestamp)}</p>
+        <ul class="card__artists">
+          ${setlistData.sets.map(({ artist }) => (
+            `<li class="card__artist">
+              <label for="input-${artist.replace(/ /g, "")}">
+                ${artist}
+              </label>
+            </li>`
+          )).join("")}
+        </ul>
+        ${setlistData.sets.map((set) => (
+          `<input class="card__artistToggle" id="input-${set.artist.replace(/ /g, "")}" type="checkbox" name="artist" value="${set.artist.replace(/ /g, "")}" hidden>
+          <div class="card__setData">
+            <h2 class="card__artist">${set.artist}</h2>
             <ol class="card__setlist">
               ${set.songs.map((song) => (
                 `<li class="card__song">${song}</li>`
               )).join("")}
-            </ol>`
-          )).join("")}
+            </ol>
+          </div>`
+        )).join("")}
         </div>
       </div>
     </div>`

@@ -3,10 +3,6 @@
     "timestamp": 0,
     "label": "Name",
     "thumbnail": "path_to_asset",
-    "artists": [
-      "artist",
-      "artist"
-    ],
     "sets": [
       {
         "artist": "artist",
@@ -21,10 +17,6 @@
     "timestamp": 1713942000000,
     "label": "Babyklok",
     "thumbnail": "babyklok.webp",
-    "artists": [
-      "BABYMETAL",
-      "Dethklok"
-    ],
     "sets": [
       {
         "artist": "Dethklok",
@@ -71,13 +63,6 @@
     "timestamp": 1723878000000,
     "label": "Golden Gate Park",
     "thumbnail": "golden_gate.webp",
-    "artists": [
-      "System of a Down",
-      "Deftones",
-      "The Mars Volta",
-      "Viagra Boys",
-      "Vowws"
-    ],
     "sets": [
       {
         "artist": "System of a Down",
@@ -137,11 +122,6 @@
     "timestamp": 1728198000000,
     "label": "Korjira",
     "thumbnail": "korjira.webp",
-    "artists": [
-      "Korn",
-      "Gojira",
-      "Spiritbox"
-    ],
     "sets": [
       {
         "artist": "Korn",
@@ -187,24 +167,6 @@
     "timestamp": 1728543600000,
     "label": "Aftershock 2024",
     "thumbnail": "aftershock_2024.webp",
-    "artists": [
-      "Filter",
-      "Ministry",
-      "Halestorm",
-      "Till Lindeman",
-      "Slayer",
-      "Highly Suspect",
-      "Dropkick Murphys",
-      "Rise Against",
-      "Evanescence",
-      "Slipknot",
-      "Anthrax",
-      "Iron Maiden",
-      "Badflower",
-      "NOTHING MORE",
-      "Tom Morello",
-      "Flogging Molly"
-    ],
     "sets": [
       {
         "artist": "Filter",
@@ -423,11 +385,6 @@
     "timestamp": 1734076800000,
     "label": "Zeal &amp; Ardor",
     "thumbnail": "zeal_and_ardor.webp",
-    "artists": [
-      "Zeal &amp; Ardor",
-      "Gaerea",
-      "Zetra"
-    ],
     "sets": [
       {
         "artist": "Zeal &amp; Ardor",
@@ -461,10 +418,6 @@
     "timestamp": 1741762800000,
     "label": "Russian Circles",
     "thumbnail": "russian_circles.webp",
-    "artists": [
-      "Russian Circles",
-      "Pelican"
-    ],
     "sets": [
       {
         "artist": "Russian Circles",
@@ -487,11 +440,6 @@
     "timestamp": 1746342000000,
     "label": "Sessanta V2.0",
     "thumbnail": "sessanta.webp",
-    "artists": [
-      "A Perfect Circle",
-      "Primus",
-      "Puscifer"
-    ],
     "sets": [
       {
         "artist": "A Perfect Circle",
@@ -590,9 +538,6 @@
     "timestamp": 1748934000000,
     "label": "The Squirrely Years",
     "thumbnail": "squirrely_years.webp",
-    "artists": [
-      "Ministry"
-    ],
     "sets": [
       {
         "artist": "Ministry",
@@ -618,9 +563,6 @@
     "timestamp": 1754204400000,
     "label": "Skeletour 2025",
     "thumbnail": "skeletour_2025.webp",
-    "artists": [
-      "Ghost"
-    ],
     "sets": [
       {
         "artist": "Ghost",
@@ -654,10 +596,6 @@
     "timestamp": 1754463600000,
     "label": "Peel it Back 2025",
     "thumbnail": "peel_it_back_2025.webp",
-    "artists": [
-      "Nine Inch Nails",
-      "Boyz Noize"
-    ],
     "sets": [
       {
         "artist": "Nine Inch Nails",
@@ -690,10 +628,6 @@
     "timestamp": 1755846000000,
     "label": "Bigger & Weirder",
     "thumbnail": "weird_al_bigger_weirder.webp",
-    "artists": [
-      "Weird Al Yankovic",
-      "Puddles Pity Party"
-    ],
     "sets": [
       {
         "artist": "Weird Al Yankovic",
@@ -737,22 +671,6 @@
     "timestamp": 1759388400000,
     "label": "Aftershock 2025",
     "thumbnail": "aftershock_2025.webp",
-    "artists": [
-      "Alkaline Trio",
-      "Testament",
-      "Acid Bath",
-      "Forbidden",
-      "Lacuna Coil",
-      "Fear Factory",
-      "Alestorm",
-      "Kerry King",
-      "Bruce Dickinson",
-      "A Perfect Circle",
-      "In This Moment",
-      "Mudvayne",
-      "Marilyn Manson",
-      "Rob Zombie"
-    ],
     "sets": [
       {
         "artist": "Alkaline Trio",
@@ -942,11 +860,6 @@
     "timestamp": 1760079600000,
     "label": "nEverest Duality",
     "thumbnail": "neverest_duality.webp",
-    "artists": [
-      "Halestorm",
-      "Lindsey Stirling",
-      "Apocalyptica"
-    ],
     "sets": [
       {
         "artist": "Halestorm",
@@ -990,9 +903,6 @@
     "timestamp": 1771574400000,
     "label": "Skeletour 2026",
     "thumbnail": "skeletour_2026.webp",
-    "artists": [
-      "Ghost"
-    ],
     "sets": [
       {
         "artist": "Ghost",
@@ -1026,10 +936,6 @@
     "timestamp": 1773558000000,
     "label": "Peel it Back 2026 - San Francisco",
     "thumbnail": "peel_it_back_03_15_26.jpg.webp",
-    "artists": [
-      "Nine Inch Nails",
-      "Boyz Noize"
-    ],
     "sets": [
       {
         "artist": "Nine Inch Nails",
@@ -1063,10 +969,6 @@
     "timestamp": 1773644400000,
     "label": "Peel it Back 2026 - Sacramento",
     "thumbnail": "peel_it_back_03_16_26.jpg.webp",
-    "artists": [
-      "Nine Inch Nails",
-      "Boyz Noize"
-    ],
     "sets": [
       {
         "artist": "Nine Inch Nails",
@@ -1100,9 +1002,6 @@
     "timestamp": 1778482800000,
     "label": "Normal Isn't",
     "thumbnail": "normal_isnt.webp",
-    "artists": [
-      "Puscifer"
-    ],
     "sets": [
       {
         "artist": "Puscifer",
@@ -1133,10 +1032,6 @@
     "timestamp": 1780038000000,
     "label": "ApocalyptHUca",
     "thumbnail": "apocalypthuca.webp",
-    "artists": [
-      "The HU",
-      "Apocalyptica"
-    ],
     "sets": [
       {
         "artist": "The HU",
@@ -1173,9 +1068,6 @@
     "timestamp": 1780470000000,
     "label": "Apocalyptica",
     "thumbnail": "apocalyptica_06_03_26.jpg",
-    "artists": [
-      "Apocalyptica"
-    ],
     "sets": [
       {
         "artist": "Apocalyptica",
@@ -1197,11 +1089,6 @@
     "timestamp": 1789887600000,
     "label": "Freaks on Parade",
     "thumbnail": "freaks_on_parade.webp",
-    "artists": [
-      "Rob Zombie",
-      "Marilyn Manson",
-      "The HU"
-    ],
     "sets": [
       {
         "artist": "Rob Zombie",
@@ -1257,18 +1144,212 @@
     "timestamp": 1790838000000,
     "label": "Aftershock 2026",
     "thumbnail": "aftershock_2026.webp",
-    "artists": [
-      "Apocalyptica",
-      "Dethklok",
-      "BABYMETAL",
-      "TOOL"
-    ],
     "sets": [
       {
-        "artist": "",
+        "artist": "Apocalyptica",
+        "songs": [
+          "Ride the Lightning",
+          "Enter Sandman",
+          "The Four Horsemen",
+          "Master of Puppets",
+          "Nothing Else Matters",
+          "Seek & Destroy"
+        ]
+      },
+      {
+        "artist": "Sevendust",
+        "songs": [
+          "Waffle",
+          "Black",
+          "Enemy",
+          "Rumble Fish",
+          ""
+        ]
+      },
+      {
+        "artist": "The Pretty Reckless",
+        "songs": [
+          "Death by Rock and Roll",
+          "For I Am Death",
+          "Make Me Wanna Die",
+          "Heaven Knows",
+          "Going to Hell"
+        ]
+      },
+      {
+        "artist": "Killswitch Engage",
+        "songs": [
+          "This Fire",
+          "In Due Time",
+          "Strength of the Mind",
+          "The End of Heartache"
+        ]
+      },
+      {
+        "artist": "Psychostick",
+        "songs": [
+          "BEER!!",
+          "Numbers (I Can Only Count to Four)",
+          "Ultra Mega Fast",
+          "Gurrrrrr",
+          "Sombrero Prophecy",
+          "H-Flat",
+          "So. Heavy.",
+          "Hokey Fucking Pokey"
+        ]
+      },
+      {
+        "artist": "Nekrogoblikon",
+        "songs": [
+          "Fiend",
+          "Show Me Your Goblin",
+          "The Many Faces of Dr. Hubert Malbec",
+          "Bones",
+          "Secret Elephant",
+          "No One Survives",
+          "Powercore",
+          "This Is It"
+        ]
+      },
+      {
+        "artist": "Dethklok",
+        "songs": [
+          "Deththeme",
+          "Awaken",
+          "Bloodrocuted",
+          "Aortic Desecration",
+          "Birthday Dethday",
+          "Duncan Hills Coffee Jingle",
+          "The Duel",
+          "The Gears",
+          "Face Fisted",
+          "Andromeda",
+          "The Cyborg Slayers",
+          "Murmaider",
+          "Thunderhorse"
+        ]
+      },
+      {
+        "artist": "Pentagram",
+        "songs": [
+          "The Ghoul",
+          "I Spoke to Death",
+          "When the Screams Come",
+          "Sign of the Wolf (Pentagram)",
+          "Thundercrest",
+          "Forever My Queen",
+          "20 Buck Spin"
+        ]
+      },
+      {
+        "artist": "Melvins",
         "songs": [
           "",
           ""
+        ]
+      },
+      {
+        "artist": "Kylesa",
+        "songs": [
+          "",
+          ""
+        ]
+      },
+      {
+        "artist": "BABYMETAL",
+        "songs": [
+          "BABYMETAL DEATH",
+          "Megitsune",
+          "RATATATA",
+          "METAL!!",
+          "from me to u",
+          "PA PA YA!!",
+          "Gimme Chocolate!!",
+          "Road to Resistance"
+        ]
+      },
+      {
+        "artist": "Black Label Society",
+        "songs": [
+          "Funeral Bell",
+          "Name in Blood",
+          "Destroy & Conquer",
+          "A Love Unreal",
+          "Heart of Darkness",
+          "No More Tears",
+          "The Blessed Hellride",
+          "Set You Free",
+          "Fire It Up",
+          "Suicide Messiah",
+          "Stillborn"
+        ]
+      },
+      {
+        "artist": "Filter",
+        "songs": [
+          "The Drowning",
+          "(Can't You) Trip Like I Do",
+          "Take a Picture",
+          "Welcome to the Fold",
+          "Hey Man Nice Shot"
+        ]
+      },
+      {
+        "artist": "Zakk Sabbath",
+        "songs": [
+          "Children of the Grave",
+          "Fairies Wear Boots",
+          "Bassically",
+          "N.I.B.",
+          "War Pigs"
+        ]
+      },
+      {
+        "artist": "Highly Suspect",
+        "songs": [
+          "Natural Born Killer",
+          "Lydia",
+          "Serotonia",
+          "Run for Your Death (More Pills)"
+        ]
+      },
+      {
+        "artist": "Danny Elfman",
+        "songs": [
+          "Sorry",
+          "Insects",
+          "Nothing to Fear (But Fear Itself)",
+          "Spider-Man Main Title",
+          "True",
+          "In My Head",
+          "Monkeys on the Loose",
+          "Wednesday Main Titles",
+          "This Is Halloween",
+          "Upside Down",
+          "Happy",
+          "Beetlejuice Theme",
+          "The River of Life",
+          "Kick Me",
+          "The Simpsons Theme",
+          "Only a Lad",
+          "Batman/Batman Returns",
+          "Who Do You Want to Be",
+          "No One Lives Forever"
+        ]
+      },
+      {
+        "artist": "TOOL",
+        "songs": [
+          "Stinkfist",
+          "Rosetta Stoned",
+          "Fear Inoculum",
+          "The Grudge",
+          "H.",
+          "Jambi",
+          "Pneuma",
+          "Crawl Away",
+          "Invincible",
+          "Vicarious"
         ]
       }
     ]
@@ -1277,10 +1358,6 @@
     "timestamp": 1797667200000,
     "label": "APusciwaii",
     "thumbnail": "apusciwaii.webp",
-    "artists": [
-      "A Perfect Circle",
-      "Puscifer"
-    ],
     "sets": [
       {
         "artist": "A Perfect Circle",
@@ -1291,6 +1368,69 @@
       },
       {
         "artist": "Puscifer",
+        "songs": [
+          "",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1811401200000,
+    "label": "A Perfect Circult I",
+    "thumbnail": "aPerfectCircult_20270527.png",
+    "sets": [
+      {
+        "artist": "A Perfect Circle",
+        "songs": [
+          "",
+          ""
+        ]
+      },
+      {
+        "artist": "The Cult",
+        "songs": [
+          "",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1812092400000,
+    "label": "A Perfect Circult II",
+    "thumbnail": "aPerfectCircult_20270604.png",
+    "sets": [
+      {
+        "artist": "A Perfect Circle",
+        "songs": [
+          "",
+          ""
+        ]
+      },
+      {
+        "artist": "The Cult",
+        "songs": [
+          "",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1812783600000,
+    "label": "Name",
+    "thumbnail": "goad.jpg",
+    "sets": [
+      {
+        "artist": "System of a Down",
+        "songs": [
+          "",
+          ""
+        ]
+      },
+      {
+        "artist": "Gojira",
         "songs": [
           "",
           ""
