@@ -37,15 +37,15 @@ const generateCard = (setlistData, idx) => {
         <ul class="card__artists">
           ${setlistData.sets.map(({ artist }) => (
             `<li class="card__artist">
-              <label for="input-${artist.replace(/ /g, "")}">
+              <label for="card-${idx}--input-${artist.replace(/ /g, "")}">
                 ${artist}
               </label>
             </li>`
           )).join("")}
         </ul>
         ${setlistData.sets.map((set) => (
-          `<input class="card__artistToggle" id="input-${set.artist.replace(/ /g, "")}" type="checkbox" name="artist" value="${set.artist.replace(/ /g, "")}" hidden>
-          <div class="card__setData">
+          `<input class="card__artistToggle" id="card-${idx}--input-${set.artist.replace(/ /g, "")}" type="checkbox" name="artist" hidden>
+          <div class="card__set">
             <h2 class="card__artist">${set.artist}</h2>
             <ol class="card__setlist">
               ${set.songs.map((song) => (

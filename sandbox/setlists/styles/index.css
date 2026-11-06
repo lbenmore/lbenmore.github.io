@@ -74,7 +74,7 @@ main {
   position: absolute;
   inset-block-end: 0;
   inset-inline-start: 0;
-  padding-inline-start: 16px; /* @todo: gutter variable? */
+  padding-inline-start: var(--gutter);
   line-height: 30px;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -93,28 +93,6 @@ main {
   font-family: sans-serif;
   overflow: hidden;
   transform: rotateY(180deg);
-}
-
-.card__artists {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 16px;
-  row-gap: 32px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  .card__artist {
-
-    label {
-      padding: 6px 12px;
-      border-radius: 999px;
-      background-color: rgba(128, 128, 128, 0.5);
-      border: 2px solid rgb(128, 128, 128);
-      white-space: nowrap;
-      cursor: pointer;
-    }
-  }
 }
 
 .card__toggle:checked {
@@ -160,10 +138,49 @@ main {
   pointer-events: auto;
 }
 
-.card__side--back:has(.card__artistToggle:checked) .card__setData {
-  display: none;
+.card__artists {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--gutter);
+  row-gap: calc(var(--gutter) * 2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .card__artist {
+    label {
+      padding: 6px 12px;
+      border-radius: 999px;
+      background-color: var(--bg-accent);
+      border: 2px solid var(--fg-accent);
+      white-space: nowrap;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+  }
 }
 
-.card__side--back:has(.card__artistToggle:checked) .card__artistToggle:checked + .card__setData {
+.card__set {
   display: block;
+  opacity: 1;
+  transition: opacity 0.3s, display 0.3s allow-discrete;
+
+  @starting-style {
+    opacity: 0;
+  }
+
+  .card__side--back:has(.card__artistToggle:checked) & {
+    display: none;
+    opacity: 0;
+  }
+
+  .card__side--back:has(.card__artistToggle:checked) .card__artistToggle:checked + & {
+    display: block;
+    opacity: 1;
+    transition-duration: 0.75s;
+
+    @starting-style {
+      opacity: 0;
+    }
+  }
 }

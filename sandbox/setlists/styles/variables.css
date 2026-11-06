@@ -1,16 +1,33 @@
 :root {
-  --bg-primary: #f8f0ff;
-  --fg-primary: #08000f;
-  --xx-primary: #8800ff;
+  --white: #f8f0ff;
+  --black: #08000f;
+  --grey: #88808f;
+  --purple: #8800ff;
+
+  --white-alpha-0dot5: #f8f0ff80;
+  --black-alpha-0dot5: #08000f80;
+  --grey-alpha-0dot5: #88808f80;
+  --purple-alpha-0dot5: #8800ff80;
+
+  --bg-primary: var(--white);
+  --fg-primary: var(--black);
+  --bg-accent: var(--purple-alpha-0dot5);
+  --fg-accent: var(--purple);
 
   --card-inset: 60px;
   --card-padding: 24px;
   --num-cols: 3;
   --num-rows: 3.5;
+  --gutter: 16px;
 
   --card-front-font: 16px/36px sans-serif;
 
   --anim-speed: 1s;
 
   --scrollbar-offset: 0px;
+
+  @media (prefers-color-scheme: dark) {
+    --bg-primary: var(--black);
+    --fg-primary: var(--white);
+  }
 }
