@@ -147,16 +147,14 @@ main {
   padding: 0;
   list-style: none;
 
-  .card__artist {
-    label {
-      padding: 6px 12px;
-      border-radius: 999px;
-      background-color: var(--bg-accent);
-      border: 2px solid var(--fg-accent);
-      white-space: nowrap;
-      cursor: pointer;
-      box-sizing: border-box;
-    }
+  .card__artist > label {
+    padding: var(--tag-padding-block) var(--tag-padding-inline);
+    border-radius: 999px;
+    background-color: var(--bg-accent);
+    border: 2px solid var(--fg-accent);
+    white-space: nowrap;
+    cursor: pointer;
+    box-sizing: border-box;
   }
 }
 

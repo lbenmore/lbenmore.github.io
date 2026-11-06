@@ -14,11 +14,13 @@
   --bg-accent: var(--purple-alpha-0dot5);
   --fg-accent: var(--purple);
 
-  --card-inset: 60px;
-  --card-padding: 24px;
   --num-cols: 3;
   --num-rows: 3.5;
   --gutter: 16px;
+  --card-inset: 60px;
+  --card-padding: 24px;
+  --tag-padding-block: 6px;
+  --tag-padding-inline: 12px;
 
   --card-front-font: 16px/36px sans-serif;
 
